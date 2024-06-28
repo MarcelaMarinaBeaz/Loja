@@ -84,6 +84,23 @@ namespace Loja
 
             }
         }
+        private int SolicitarAcaoUsuario()
+        {
+            int acao = -1;
+            while (acao <= 0 || acao > 11)
+            {
+                Console.WriteLine($"Qual ação deseja fazer ?");
+                acao = int.Parse(Console.ReadLine());
+
+                if (acao > 11)
+                {
+                    Console.WriteLine($"Erro !!!!!!!!" +
+                        $"\n Digite uma ação valido");
+                }
+            }
+            return acao;
+
+        }
         public void ListarItem()
         {
 
