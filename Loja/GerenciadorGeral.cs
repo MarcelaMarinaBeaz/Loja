@@ -15,7 +15,8 @@ namespace Loja
             usuario.AlterarId(novoID);
             Usuarios.Add(usuario);
         }
-        public void Editar(string nome, string email, string endereco)
+
+        public void EditarU(string nome, string email, string endereco)
         {
             int acaoSolicitada = -1;
             while (acaoSolicitada > 3 || acaoSolicitada < 0)
@@ -37,5 +38,7 @@ namespace Loja
                     Console.WriteLine("Erro!!! Digite uma opção valida");
                 }
             }
+        }
     }
 }
+

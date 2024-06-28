@@ -10,7 +10,7 @@ namespace Loja
     public class Usuario
     {
         private int id { get; set; }
-        private string name { get; set; }
+        private string nome { get; set; }
         private string email { get; set; }
         private string endereco { get; set; }
 
@@ -19,10 +19,10 @@ namespace Loja
             return id;
         }
 
-        public Usuario(int id, string name, string email, string endereco)
+        public Usuario(int id, string nome, string email, string endereco)
         {
             this.id = id;
-            this.name = name;
+            this.nome = nome;
             this.email = email;
             this.endereco = endereco;
             
@@ -31,7 +31,7 @@ namespace Loja
         {
 
             Console.WriteLine($"ID do usuario: {id}" +
-                              $"Nome do Usuario: {name}  " +
+                              $"Nome do Usuario: {nome}  " +
                               $"Email do Usuario: {email}" +
                               $"Endereço do Usuario: {endereco}");
         }
@@ -41,8 +41,7 @@ namespace Loja
         }
         
         public void EditarUsuario()
-        {
-            
+        {           
            
             
                 ExibirDetalhesUsuario();
@@ -57,7 +56,7 @@ namespace Loja
 
             int acaoSolicitada = int.Parse(Console.ReadLine());
 
-            GerenciadorGeral.Editar(name, email, endereco);
+            gerenciadorGeral.EditarU(nome, email, endereco);
 
         }
     }
