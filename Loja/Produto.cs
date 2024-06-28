@@ -22,6 +22,16 @@ namespace Loja
         }
         public void IniciarSistema()
         {
+            int acaoSolicitada = -1;
+            while(acaoSolicitada != 0) 
+            {
+                Menu();
+                int acaoSelecionada = SolicitarAcaoUsuario;
+                RealizarAcao(acaoSelecionada);
+            }
+        }
+        public void Menu()
+        {
             Console.WriteLine("-------------------Lojas E&M-----------------");
             Console.WriteLine("1 - Cadastro do Usuário" +
                               "2 - Listar Item" +
