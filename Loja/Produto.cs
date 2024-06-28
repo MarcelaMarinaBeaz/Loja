@@ -22,11 +22,12 @@ namespace Loja
         }
         public void IniciarSistema()
         {
+            //Repetição do menu
             int acaoSolicitada = -1;
             while(acaoSolicitada != 0) 
             {
                 Menu();
-                int acaoSelecionada = SolicitarAcaoUsuario();
+                int acaoSelecionada = SolicitarAcaoUsuario();  
                 RealizarAcao(acaoSelecionada);
             }
         }
