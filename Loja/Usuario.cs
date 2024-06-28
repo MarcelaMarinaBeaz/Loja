@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,19 +14,50 @@ namespace Loja
         private string email { get; set; }
         private string endereco { get; set; }
 
+        public int PegarId()
+        {
+            return id;
+        }
+
         public Usuario(int id, string name, string email, string endereco)
         {
             this.id = id;
             this.name = name;
             this.email = email;
             this.endereco = endereco;
+            
         }
-        public void LoginCliente()
+        public void ExibirDetalhesUsuario()
         {
 
+            Console.WriteLine($"ID do usuario: {id}" +
+                              $"Nome do Usuario: {name}  " +
+                              $"Email do Usuario: {email}" +
+                              $"Endereço do Usuario: {endereco}");
         }
+        public void AlterarId(int Id)
+        {
+            id = Id;
+        }
+        
         public void EditarUsuario()
         {
+            
+           
+            
+                ExibirDetalhesUsuario();
+                Console.WriteLine("Qual id do usuario que deseja editar?");
+                int idEscolhido = int.Parse(Console.ReadLine());
+                Console.WriteLine("------------------Cliente-----------------");
+                Console.WriteLine($"1 - Nome do Usuario  " +
+                                 $"\n2 - Email do Usuario " +
+                                 $"\n3 - Endereço do Usuario ");
+                Console.WriteLine("Qual area Deseja editar???");
+
+
+            int acaoSolicitada = int.Parse(Console.ReadLine());
+
+            GerenciadorGeral.Editar(name, email, endereco);
 
         }
     }
