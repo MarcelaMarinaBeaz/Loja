@@ -26,7 +26,7 @@ namespace Loja
             while(acaoSolicitada != 0) 
             {
                 Menu();
-                int acaoSelecionada = SolicitarAcaoUsuario;
+                int acaoSelecionada = SolicitarAcaoUsuario();
                 RealizarAcao(acaoSelecionada);
             }
         }
