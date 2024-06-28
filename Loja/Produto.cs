@@ -22,7 +22,7 @@ namespace Loja
         }
         public void IniciarSistema()
         {
-            //Repetição do menu
+            //Repetição do Menu
             int acaoSolicitada = -1;
             while(acaoSolicitada != 0) 
             {
