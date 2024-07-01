@@ -40,7 +40,7 @@ namespace Loja
         {
             if (acao == 1)
             {
-                CadastroUsuario(); 
+                CadastroUsuario();
             }
             else if (acao == 2)
             {
@@ -103,6 +103,40 @@ namespace Loja
 
         public void CadastroUsuario()
         {
+
+            Console.WriteLine("------------------- Cadastro ------------------");
+            Console.WriteLine($"1 - Nome do Usuario  " +
+                             $"\n2 - Email do Usuario " +
+                             $"\n3 - Endereço do Usuario ");
+            Console.WriteLine("------------------------------------------------");
+
+            int acaoSolicitada = -1;
+
+            while (acaoSolicitada <= 0 || acaoSolicitada > 3)
+            {
+                Console.WriteLine("Escolha uma Ação!!");
+
+                acaoSolicitada = int.Parse(Console.ReadLine());
+
+                if (acaoSolicitada == 1)
+                {
+                    Console.WriteLine("Digite seu Nome ?");
+                }
+                else if (acaoSolicitada == 2)
+                {
+                    Console.WriteLine("Digite seu Email ?");
+                }
+                else if (acaoSolicitada == 3)
+                {
+                    Console.WriteLine("Digite seu Endereço ?");
+                }
+                else
+                {
+                    Console.WriteLine("Digite um id valido!!!!!");
+                }
+
+            }
+            return;
 
         }
         public void CadastrarProduto()
