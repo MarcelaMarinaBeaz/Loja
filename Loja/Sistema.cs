@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Loja
 {
-    internal class Sistema
+    public class Sistema
     {
         public void IniciarSistema()
         {
