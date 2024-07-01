@@ -15,6 +15,11 @@ namespace Loja
             usuario.AlterarId(novoID);
             Usuarios.Add(usuario);
         }
+
+        public void Usuario()
+        {
+
+        }
         public void EditarUsuario()
         {
 
