@@ -40,7 +40,7 @@ namespace Loja
         {
             if (acao == 1)
             {
-
+                CadastroUsuario();
             }
             else if (acao == 2)
             {
@@ -98,6 +98,11 @@ namespace Loja
                 }
             }
             return acao;
+
+        }
+
+        public void CadastroUsuario()
+        {
 
         }
         public void CadastrarProduto()
