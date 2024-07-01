@@ -9,7 +9,7 @@ namespace Loja
     public class GerenciadorGeral
     {
         List<Usuario> Usuarios { get; set; }
-        public void LoginCliente(Usuario usuario)
+        public void LoginUsuario(Usuario usuario)
         {
             int novoID = Usuarios.Max(usuario => usuario.PegarId() + 1);
             usuario.AlterarId(novoID);
@@ -17,12 +17,13 @@ namespace Loja
         }
         public void EditarUsuario()
         {
-            Console.WriteLine("Qual id do usuario que deseja editar?");
-            int idEscolhido = int.Parse(Console.ReadLine());
+
             Console.WriteLine("------------------Cliente-----------------");
             Console.WriteLine($"1 - Nome do Usuario  " +
                              $"\n2 - Email do Usuario " +
                              $"\n3 - Endereço do Usuario ");
+            Console.WriteLine("Qual id do usuario que deseja editar?");
+            int idEscolhido = int.Parse(Console.ReadLine());
             Console.WriteLine("Qual area Deseja editar???");
 
 
