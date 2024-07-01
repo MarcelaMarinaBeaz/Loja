@@ -40,24 +40,6 @@ namespace Loja
             id = Id;
         }
         
-        public void EditarUsuario()
-        {           
-           
-            
-                ExibirDetalhesUsuario();
-                Console.WriteLine("Qual id do usuario que deseja editar?");
-                int idEscolhido = int.Parse(Console.ReadLine());
-                Console.WriteLine("------------------Cliente-----------------");
-                Console.WriteLine($"1 - Nome do Usuario  " +
-                                 $"\n2 - Email do Usuario " +
-                                 $"\n3 - Endereço do Usuario ");
-                Console.WriteLine("Qual area Deseja editar???");
-
-
-            int acaoSolicitada = int.Parse(Console.ReadLine());
-
-            gerenciadorGeral.EditarU(nome, email, endereco);
-
-        }
+       
     }
 }

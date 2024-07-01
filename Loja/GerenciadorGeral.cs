@@ -15,6 +15,22 @@ namespace Loja
             usuario.AlterarId(novoID);
             Usuarios.Add(usuario);
         }
+        public void EditarUsuario()
+        {
+            Console.WriteLine("Qual id do usuario que deseja editar?");
+            int idEscolhido = int.Parse(Console.ReadLine());
+            Console.WriteLine("------------------Cliente-----------------");
+            Console.WriteLine($"1 - Nome do Usuario  " +
+                             $"\n2 - Email do Usuario " +
+                             $"\n3 - Endereço do Usuario ");
+            Console.WriteLine("Qual area Deseja editar???");
+
+
+            int acaoSolicitada = int.Parse(Console.ReadLine());
+
+            EditarU(null, null, null);//nome, email, endereco);
+
+        }
 
         public void EditarU(string nome, string email, string endereco)
         {
