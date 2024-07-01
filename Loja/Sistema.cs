@@ -40,7 +40,7 @@ namespace Loja
         {
             if (acao == 1)
             {
-                CadastroUsuario();
+                CadastroUsuario(); 
             }
             else if (acao == 2)
             {
