@@ -78,7 +78,7 @@ namespace Loja
             }
             else if (acao == 10)
             {
-
+                CalcularFret();
             }
             else if (acao == 11)
             {
@@ -201,6 +201,10 @@ namespace Loja
         private void CalcularCupom()
         {
 
+        }
+        private void CalcularFret()
+        {
+            Console.WriteLine("");
         }
         private void FinalizarPedido()
         {
