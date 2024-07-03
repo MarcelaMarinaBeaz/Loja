@@ -44,7 +44,7 @@ namespace Loja
             }
             else if (acao == 2)
             {
-
+                ListarItem();
             }
             else if (acao == 3)
             {
