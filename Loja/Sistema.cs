@@ -8,6 +8,8 @@ namespace Loja
 {
     internal class Sistema
     {
+        public Usuario usuario { get; set; }
+        public GerenciadorGeral ger { get; set; }
         public void IniciarSistema()
         {
             //Repetição do Menu
@@ -44,7 +46,7 @@ namespace Loja
             }
             else if (acao == 2)
             {
-
+              
             }
             else if (acao == 3)
             {
@@ -103,11 +105,74 @@ namespace Loja
 
         public void CadastroUsuario()
         {
+            int acaoSolicitada = -1;
+            while (acaoSolicitada > 2 || acaoSolicitada < 0)
+            {
+                Console.WriteLine( $"1 - Cadastrar " +
+                               $"\n2 - Editar Cadastro");
+            Console.WriteLine($"Qual ação deseja realizar?");
+             acaoSolicitada = int.Parse(Console.ReadLine());
 
-        }
-        public void CadastrarProduto()
-        {
+                if (acaoSolicitada == 1)
+                {
+                    Console.WriteLine($"Digite o seu nome");
+                    string Nome = Console.ReadLine();
 
+                    Console.WriteLine($"Digite seu email");
+                    string Email = Console.ReadLine();
+
+                    Console.WriteLine($"Digite o Endereso de sua casa");
+                    string Endereco = Console.ReadLine();
+
+                    Usuario u = new Usuario(1, Nome, Email, Endereco);
+
+                    ger.AdicionarUsuario(u);
+
+                }
+                else if (acaoSolicitada == 2)
+                {
+                    int acaoEscolida = -1;
+                    while (acaoEscolida > 3 || acaoEscolida < 0)
+                    {
+                        //usuario.ExibirDetalhesUsuario();
+                        Console.WriteLine($"1 - Editar Nome" +
+                                  $"2 - Editar Email" +
+                                  $"3 - Editar Endereço");
+                        Console.WriteLine("Qual area Deseja editar???");
+                        acaoEscolida = int.Parse(Console.ReadLine());
+
+                        if (acaoEscolida == 1)
+                        {
+                            //usuario
+                            Console.WriteLine("Novo nome de usuario");
+                            string Nome = Console.ReadLine();
+                        }
+                        else if (acaoEscolida == 2)
+                        {
+                            //email
+                            Console.WriteLine("Novo email do usuario");
+                            string Email = Console.ReadLine();
+                        }
+                        else if (acaoEscolida == 3)
+                        {
+                            //endereço
+                            Console.WriteLine("Novo endereço do usuario");
+                           string  Endereco = Console.ReadLine();
+                        }
+                        else if (acaoEscolida > 3 || acaoEscolida < 0)
+                        {
+                            Console.WriteLine("Erro!!! Digite uma opção valida");
+                        }
+                    }
+                }
+                else if(acaoSolicitada >3 || acaoSolicitada < 0)
+                {
+                    Console.WriteLine("Ação invalida !!!!!!!!!!!" +
+                                      "\nEscolha uma opição valida");
+                }
+              
+            }
+           
         }
         public void ListarItem()
         {
