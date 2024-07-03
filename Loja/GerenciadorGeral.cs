@@ -56,6 +56,10 @@ namespace Loja
                 }
             }
         }
+<<<<<<< Updated upstream
+=======
+        
+>>>>>>> Stashed changes
     }
 }
 

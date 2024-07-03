@@ -139,10 +139,7 @@ namespace Loja
             return;
 
         }
-        public void CadastrarProduto()
-        {
-
-        }
+        
         public void ListarItem()
         {
 
