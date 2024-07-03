@@ -27,6 +27,11 @@ namespace Loja
             this.endereco = endereco;
             
         }
+
+        public Usuario()
+        {
+        }
+
         public void ExibirDetalhesUsuario()
         {
 
