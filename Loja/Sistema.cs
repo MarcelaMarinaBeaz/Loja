@@ -176,7 +176,7 @@ namespace Loja
         }
         public void ListarItem()
         {
-
+            ger.ListarProduto(produtos);
         }
         private void AdicionarEstoque()
         {
