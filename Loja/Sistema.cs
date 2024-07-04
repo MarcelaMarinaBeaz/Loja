@@ -204,7 +204,36 @@ namespace Loja
         }
         private void CalcularFret()
         {
-            Console.WriteLine("");
+            Console.WriteLine("---------------------------Calcular Valor do Fretev---------------------------");
+            Console.WriteLine($"1 - Acre (AC)" +
+                              $"\n2 - Alagoas (AL)" +
+                              $"\n3 - Amapá (AP)" +
+                              $"\n4 - Amazonas (AM)" +
+                              $"\n5 - Bahia (BA)" +
+                              $"\n6 - Ceará (CE)" +
+                              $"\n7 - Espírito Santo (ES)" +
+                              $"\n8 - Goiás (GO) " +
+                              $"\n9 - Maranhão (MA) " +
+                              $"\n10 - Mato Grosso (MT) " +
+                              $"\n11 - Mato Grosso do Sul (MS) " +
+                              $"\n12 - Minas Gerais (MG) " +
+                              $"\n13 - Pará (PA) " +
+                              $"\n14 - Paraíba (PB) " +
+                              $"\n15 - Paraná (PR)" +
+                              $"\n16 - Pernanbuco (PE) " +
+                              $"\n17 - Piauí (PI) " +
+                              $"\n18 - Rio de Janeiro (RJ) " +
+                              $"\n19 - Rio Grande do Norte (RN)" +
+                              $"\n20 - Rio Grande so Sul (RS) " +
+                              $"\n21 - Rondônia (RO)" +
+                              $"\n22 - Roraima (RR) " +
+                              $"\n23 - Santa Catarina (SC)" +
+                              $"\n24 - São Paulo (SP) " +
+                              $"\n25 - Sergipe (SE) " +
+                              $"\n26 - Tocantins (TO)");
+            Console.WriteLine($"Qual a sigla do estado que voce mora??");
+
+            Console.WriteLine("------------------------------------------------------------------------------");
         }
         private void FinalizarPedido()
         {
