@@ -69,6 +69,7 @@ namespace Loja
                               $"\nEstoque: {Quant_estoque}");
             Console.WriteLine("-----------------------------------------------------------");
         }
+        //Listar produto
         public void ListarProduto()
         {
             Console.WriteLine("-------------Lista de Produto-------------");
