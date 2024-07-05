@@ -7,12 +7,17 @@ using System.Threading.Tasks;
 
 namespace Loja
 {
-    internal class Sistema
+    public class Sistema
     {
         public Usuario usuario { get; set; }
         public GerenciadorGeral ger { get; set; }
         public Produto P { get; set; }
        
+        public Sistema()
+        {
+            usuario= new Usuario();
+            ger= new GerenciadorGeral();
+        }
         public void IniciarSistema()
         {
             //Repetição do Menu
@@ -180,7 +185,7 @@ namespace Loja
 
         public void ListarItem()
         {
-            P.ListarProduto();
+            ger.ListarProduto();
         }
 
         private void AdicionarItemNoCarrinho()
