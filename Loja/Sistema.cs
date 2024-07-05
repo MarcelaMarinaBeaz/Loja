@@ -245,10 +245,7 @@ namespace Loja
         {
 
         }
-        private void CalcularCupom()
-        {
-
-        }
+       
         private void CalcularFret()
         {
 
