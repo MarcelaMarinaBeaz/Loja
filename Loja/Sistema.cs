@@ -249,6 +249,10 @@ namespace Loja
         {
 
         }
+        private void CalcularFret()
+        {
+
+        }
         private void FinalizarPedido()
         {
 
