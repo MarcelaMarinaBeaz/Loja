@@ -58,12 +58,22 @@ namespace Loja
             {
                 produto.ExibirDetalhesDoProduto();
             }
+            Console.WriteLine("------------------------------------------");
         }
         public void AdicionarUsuario(Usuario usuario)
         {
             int novoID = Usuarios.Max(usuario => usuario.PegarId() + 1);
             usuario.AlterarId(novoID);
             Usuarios.Add(usuario);
+        }
+        public void  ListarCliente()
+        {
+            Console.WriteLine("-------------Lista de Cliente-------------");
+            foreach (Usuario Usuarios in Usuarios)
+            {
+                Usuarios.ExibirDetalhesUsuario();
+            }
+            Console.WriteLine("------------------------------------------");
         }
 
 
