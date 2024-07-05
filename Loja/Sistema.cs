@@ -231,8 +231,8 @@ namespace Loja
                               $"\n24 - São Paulo (SP) " +
                               $"\n25 - Sergipe (SE) " +
                               $"\n26 - Tocantins (TO)");
-            Console.WriteLine($"Qual a sigla do estado que voce mora??");
-            Console.WriteLine("");
+            Console.WriteLine($"Digite o numero que coresponde a seu Estado");
+            
 
             Console.WriteLine("------------------------------------------------------------------------------");
         }
