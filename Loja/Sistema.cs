@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,6 +11,8 @@ namespace Loja
     {
         public Usuario usuario { get; set; }
         public GerenciadorGeral ger { get; set; }
+        public Produto P { get; set; }
+       
         public void IniciarSistema()
         {
             //Repetição do Menu
@@ -50,15 +53,15 @@ namespace Loja
             }
             else if (acao == 3)
             {
-
+                AdicionarItemNoCarrinho();
             }
             else if (acao == 4)
             {
-
+               
             }
             else if (acao == 5)
             {
-
+               
             }
             else if (acao == 6)
             {
@@ -66,23 +69,23 @@ namespace Loja
             }
             else if (acao == 7)
             {
-
+               
             }
             else if (acao == 8)
             {
-
+                
             }
             else if (acao == 9)
             {
-
+                
             }
             else if (acao == 10)
             {
-
+                
             }
             else if (acao == 11)
             {
-
+                
             }
         }
         private int SolicitarAcaoUsuario()
@@ -174,13 +177,57 @@ namespace Loja
             }
            
         }
+
         public void ListarItem()
         {
-            ger.ListarProduto(produtos);
+            P.ListarProduto();
         }
-        private void AdicionarEstoque()
-        {
 
+        private void AdicionarItemNoCarrinho()
+        {
+            
+                Console.WriteLine("-------------ITENS------------");
+                Console.WriteLine("\n1 - Civic G10" +
+                                  "\n2 - Bugatti Divo" +
+                                  "\n3 - Aspark Owl" +
+                                  "\n4 - CRX/Del Sol" +
+                                  "\n5 - Civic EX " +
+                                  "\n6 - Civic Si" +
+                                  "\n7 - Civic Sport" +
+                                  "\n8 - Civic Touring" +
+                                  "\n9 - Honda New Civic LXS" +
+                                  "\n10 - Honda Civic LXR" +
+                                  "\n11 - Honda Civic EXL" +
+                                  "\n12 - Honda Civic LXR" +
+                                  "\n13 - Renault Kwid" +
+                                  "\n14 - Fiat Mobi" +
+                                  "\n15 -  Citroën C3" +
+                                  "\n16 - Hyundai HB20" +
+                                  "\n17 - Fiat Argo" +
+                                  "\n18 - Renault Stepway" +
+                                  "\n19 - Chevrolet Onix" +
+                                  "\n20 - Volkswagen Polo Track" +
+                                  "\n21 - Fiat Strada" +
+                                  "\n22 - VW Polo" +
+                                  "\n23 - Fiat Mobi" +
+                                  "\n24 - Volkswagen Polo" +
+                                  "\n25 - BMW" +
+                                  "\n26 - Jaguar" +
+                                  "\n27 - Velar" +
+                                  "\n28 - Aston Martin" +
+                                  "\n29 - Lamborghini" +
+                                  "\n30 - Rolls Royce");
+                Console.WriteLine("Digite qual Produto deseja adicionar No carrinho??");
+            int acao= 0;
+            if (acao >= 1 || acao <= 30)
+            {
+                Console.WriteLine("Seu Item foi adicionado ao carrinho");
+            }
+            else
+            {
+                Console.WriteLine("Digite uma ação valida!!!!!!!!!!!");
+            }
+           
         }
         public void EditarItem()
         {
@@ -206,17 +253,7 @@ namespace Loja
         {
 
         }
-        public void ListarAcao()
-        {
-
-        }
-        private void SomarTotal()
-        {
-
-        }
-        private void SomarItem()
-        {
-
-        }
+        
+        
     }
 }
