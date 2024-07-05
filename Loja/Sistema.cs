@@ -233,6 +233,7 @@ namespace Loja
                               $"\n26 - Tocantins (TO)");
             Console.WriteLine($"Qual a sigla do estado que voce mora??");
 
+
             Console.WriteLine("------------------------------------------------------------------------------");
         }
         private void FinalizarPedido()
