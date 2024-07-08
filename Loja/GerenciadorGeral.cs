@@ -72,17 +72,22 @@ namespace Loja
         {
 
             int acaoS = -1;
-            while (acaoS < 31 || acaoS >= 1)
+            while (acaoS < 32 || acaoS >= 1)
             {
                 Console.WriteLine("Seu item foi adicionado no carrinho!!!!");
                 acaoS = int.Parse(Console.ReadLine());
 
-                if (acaoS > 30 || acaoS < 1)
+                if (acaoS > 31 || acaoS < 1)
                 {
                     Console.WriteLine("Açao invalida!!!!");
                 }
             }
             return;
+        }
+
+        public void MostrarItemCarrinho()
+        {
+            
         }
 
         public void  ListarCliente()

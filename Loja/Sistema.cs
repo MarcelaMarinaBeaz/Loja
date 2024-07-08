@@ -113,7 +113,7 @@ namespace Loja
             return acao;
 
         }
-
+        //1
         public void CadastroUsuario()
         {
             int acaoSolicitada = -1;
@@ -185,12 +185,12 @@ namespace Loja
             }
            
         }
-
+        //2
         public void ListarItem()
         {
             ger.ListarProduto();
         }
-
+        //3
         private void AdicionarItemNoCarrinho()
         {
             
@@ -225,15 +225,17 @@ namespace Loja
                                   "\n28 - Aston Martin" +
                                   "\n29 - Lamborghini" +
                                   "\n30 - Rolls Royce" +
-                                  "\n31 - Impala ");
+                                  "\n31 - Impala " +
+                                  "\n---------------------------------");
                 Console.WriteLine("Digite qual Produto deseja adicionar No carrinho??");
             int pSelecionada = int.Parse(Console.ReadLine());
 
-            ger.AdicionarItemNoCarrinho(pSelecionada);
+            ger.AdicionarItemNoCarrinho();
         }
+        //4
         private void MostrarItemNoCarrinho()
         {
-            throw new NotImplementedException();
+           MostrarItemNoCarrinho();
         }
 
         public void EditarItem()
