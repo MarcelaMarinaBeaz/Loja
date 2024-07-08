@@ -272,127 +272,128 @@ namespace Loja
                                   $"\n9 - Maranhão  " +
                                   $"\n10 - Mato Grosso  " +
                                   $"\n11 - Mato Grosso do Sul  " +
-                                  $"\n12 - Minas Gerais (MG) " +
-                                  $"\n13 - Pará (PA) " +
-                                  $"\n14 - Paraíba (PB) " +
-                                  $"\n15 - Paraná (PR)" +
-                                  $"\n16 - Pernanbuco (PE) " +
-                                  $"\n17 - Piauí (PI) " +
-                                  $"\n18 - Rio de Janeiro (RJ) " +
-                                  $"\n19 - Rio Grande do Norte (RN)" +
-                                  $"\n20 - Rio Grande so Sul (RS) " +
-                                  $"\n21 - Rondônia (RO)" +
-                                  $"\n22 - Roraima (RR) " +
-                                  $"\n23 - Santa Catarina (SC)" +
-                                  $"\n24 - São Paulo (SP) " +
-                                  $"\n25 - Sergipe (SE) " +
-                                  $"\n26 - Tocantins (TO)");
+                                  $"\n12 - Minas Gerais  " +
+                                  $"\n13 - Pará " +
+                                  $"\n14 - Paraíba  " +
+                                  $"\n15 - Paraná " +
+                                  $"\n16 - Pernanbuco  " +
+                                  $"\n17 - Piauí  " +
+                                  $"\n18 - Rio de Janeiro " +
+                                  $"\n19 - Rio Grande do Norte " +
+                                  $"\n20 - Rio Grande so Sul  " +
+                                  $"\n21 - Rondônia " +
+                                  $"\n22 - Roraima  " +
+                                  $"\n23 - Santa Catarina " +
+                                  $"\n24 - São Paulo  " +
+                                  $"\n25 - Sergipe  " +
+                                  $"\n26 - Tocantins ");
                 Console.WriteLine($"Digite o numero que coresponde a seu Estado");
                 acao = int.Parse( Console.ReadLine() );
 
                 if(acao == 1)
                 {
-
+                    Console.WriteLine("60");
                 }
                 else if (acao == 2)
                 {
-
+                    Console.WriteLine("40");
                 }
                 else if (acao == 3)
                 {
-
+                    Console.WriteLine("60");
                 }
                 else if(acao == 4)
                 {
-
+                    Console.WriteLine("60");
                 }
                 else if (acao == 5)
                 {
-
+                    Console.WriteLine("15");
                 }
                 else if (acao == 6)
                 {
-
+                    Console.WriteLine("50");
                 }
                 else if (acao == 7)
-                {               
-                        
+                {
+                    Console.WriteLine("15");
                 }
                 else if (acao == 8)
                 {
-
+                    Console.WriteLine("15");
                 }
                 else if (acao == 9)
                 {
-
+                    Console.WriteLine("50");
                 }
                 else if (acao == 10)
                 {
-
+                    Console.WriteLine("40");
                 }
                 else if (acao == 11)
                 {
-
+                    Console.WriteLine("20");
                 }
                 else if (acao == 12)
                 {
-
+                    //Qualquer pedido em Minas e com Frete Grátiz pois e a sede da empresa
+                    Console.WriteLine("Frete Grátiz");
                 }
                 else if (acao == 13)
                 {
-
+                    Console.WriteLine("50");
                 }
                 else if (acao == 14)
                 {
-
+                    Console.WriteLine("50");
                 }
                 else if (acao == 15)
                 {
-
+                    Console.WriteLine("20");
                 }
                 else if (acao == 16)
                 {
-
+                    Console.WriteLine("50");
                 }
                 else if (acao == 17)
                 {
-
+                    Console.WriteLine("30");
                 }
                 else if (acao == 18)
                 {
-
+                    Console.WriteLine("15");
                 }
                 else if (acao == 19)
                 {
-
+                    Console.WriteLine("40");
                 }
                 else if (acao == 20)
                 {
-
+                    Console.WriteLine("20");
                 }
                 else if (acao == 21)
                 {
-
+                    Console.WriteLine("50");
                 }
                 else if (acao == 22)
                 {
-
+                    Console.WriteLine("60");
                 }
                 else if (acao == 23)
                 {
-
+                    Console.WriteLine("20");
                 }
                 else if (acao == 24)
                 {
-
+                    Console.WriteLine("15");
                 }
                 else if (acao == 25)
                 {
-
+                    Console.WriteLine("30");
                 }
                 else if(acao == 26)
                 {
-
+                    Console.WriteLine("30");
                 }
                 else
                 {
