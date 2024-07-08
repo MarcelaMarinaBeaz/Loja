@@ -36,14 +36,13 @@ namespace Loja
                               "\n2 - Listar Item" +
                               "\n3 - Adicionar Item no Carrinho" +
                               "\n4 - Mostrar Item do Carrinho" +
-                              "\n5 - Adicionar item no Estoque" +
-                              "\n6 - Editar item" +
-                              "\n7 - Excluir" +
-                              "\n8 - Realinhar fluxo do estoque" +
-                              "\n9 - Cadastrar cupom" +
-                             "\n10 - Calcular frete" +
-                             "\n11 - Finalizar Pedido" +
-                             "\n------------------------------------------------");
+                              "\n5 - Editar item" +
+                              "\n6 - Excluir" +
+                              "\n7 - Realinhar fluxo do estoque" +
+                              "\n8 - Cadastrar cupom" +
+                              "\n9 - Calcular frete" +
+                              "\n10 - Finalizar Pedido" +
+                              "\n------------------------------------------------");
 
         }
         public void RealizarAcao(int acao)
@@ -88,10 +87,7 @@ namespace Loja
             {
                 
             }
-            else if (acao == 11)
-            {
-                
-            }
+            
         }
 
         
