@@ -255,18 +255,21 @@ namespace Loja
        
         private void CalcularFret()
         {
+            int acao = -1;
+            while (acao < 0 || acao > 26)
+            {//começo do while
                 Console.WriteLine("---------------------------Calcular Valor do Fretev---------------------------");
-                Console.WriteLine($"1 - Acre (AC)" +
-                                  $"\n2 - Alagoas (AL)" +
-                                  $"\n3 - Amapá (AP)" +
-                                  $"\n4 - Amazonas (AM)" +
-                                  $"\n5 - Bahia (BA)" +
-                                  $"\n6 - Ceará (CE)" +
-                                  $"\n7 - Espírito Santo (ES)" +
-                                  $"\n8 - Goiás (GO) " +
-                                  $"\n9 - Maranhão (MA) " +
-                                  $"\n10 - Mato Grosso (MT) " +
-                                  $"\n11 - Mato Grosso do Sul (MS) " +
+                Console.WriteLine($"1 - Acre " +
+                                  $"\n2 - Alagoas " +
+                                  $"\n3 - Amapá " +
+                                  $"\n4 - Amazonas " +
+                                  $"\n5 - Bahia " +
+                                  $"\n6 - Ceará " +
+                                  $"\n7 - Espírito Santo " +
+                                  $"\n8 - Goiás  " +
+                                  $"\n9 - Maranhão  " +
+                                  $"\n10 - Mato Grosso  " +
+                                  $"\n11 - Mato Grosso do Sul  " +
                                   $"\n12 - Minas Gerais (MG) " +
                                   $"\n13 - Pará (PA) " +
                                   $"\n14 - Paraíba (PB) " +
@@ -283,10 +286,122 @@ namespace Loja
                                   $"\n25 - Sergipe (SE) " +
                                   $"\n26 - Tocantins (TO)");
                 Console.WriteLine($"Digite o numero que coresponde a seu Estado");
+                acao = int.Parse( Console.ReadLine() );
 
+                if(acao == 1)
+                {
 
-                Console.WriteLine("------------------------------------------------------------------------------");
-            
+                }
+                else if (acao == 2)
+                {
+
+                }
+                else if (acao == 3)
+                {
+
+                }
+                else if(acao == 4)
+                {
+
+                }
+                else if (acao == 5)
+                {
+
+                }
+                else if (acao == 6)
+                {
+
+                }
+                else if (acao == 7)
+                {               
+                        
+                }
+                else if (acao == 8)
+                {
+
+                }
+                else if (acao == 9)
+                {
+
+                }
+                else if (acao == 10)
+                {
+
+                }
+                else if (acao == 11)
+                {
+
+                }
+                else if (acao == 12)
+                {
+
+                }
+                else if (acao == 13)
+                {
+
+                }
+                else if (acao == 14)
+                {
+
+                }
+                else if (acao == 15)
+                {
+
+                }
+                else if (acao == 16)
+                {
+
+                }
+                else if (acao == 17)
+                {
+
+                }
+                else if (acao == 18)
+                {
+
+                }
+                else if (acao == 19)
+                {
+
+                }
+                else if (acao == 20)
+                {
+
+                }
+                else if (acao == 21)
+                {
+
+                }
+                else if (acao == 22)
+                {
+
+                }
+                else if (acao == 23)
+                {
+
+                }
+                else if (acao == 24)
+                {
+
+                }
+                else if (acao == 25)
+                {
+
+                }
+                else if(acao == 26)
+                {
+
+                }
+                else
+                {
+                    Console.WriteLine($"Erro !!!!!!!!!" +
+                                      $"\nDigite uma opição valida");
+                }
+
+            }//final  o while
+            Console.WriteLine("------------------------------------------------------------------------------");
+           
+
         }
         private void FinalizarPedido()
         {
