@@ -66,23 +66,24 @@ namespace Loja
             usuario.AlterarId(novoID);
             Usuarios.Add(usuario);
         }
-<<<<<<< HEAD
+
         public void AdicionarItemNoCarrinho()
         {
-            
-                int acaoS = -1;
-                while(acaoS < 31 || acaoS >= 1)
-                {
-                     Console.WriteLine("Seu item foi adicionado no carrinho!!!!");
-                     acaoS = int.Parse(Console.ReadLine()); 
 
-                     if (acaoS > 30 || acaoS < 1)
-                     {
-                         Console.WriteLine("Açao invalida!!!!");
-                     }
+            int acaoS = -1;
+            while (acaoS < 31 || acaoS >= 1)
+            {
+                Console.WriteLine("Seu item foi adicionado no carrinho!!!!");
+                acaoS = int.Parse(Console.ReadLine());
+
+                if (acaoS > 30 || acaoS < 1)
+                {
+                    Console.WriteLine("Açao invalida!!!!");
                 }
+            }
             return;
-=======
+        }
+
         public void  ListarCliente()
         {
             Console.WriteLine("-------------Lista de Cliente-------------");
@@ -92,7 +93,7 @@ namespace Loja
             }
             Console.WriteLine("------------------------------------------");
         }
->>>>>>> 31b864b2ebc6fa10620db4ce069fdd796fc94ec8
+
 
 
 
