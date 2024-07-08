@@ -65,7 +65,7 @@ namespace Loja
             }
             else if (acao == 5)
             {
-               
+                EditarItem();
             }
             else if (acao == 6)
             {
@@ -237,6 +237,24 @@ namespace Loja
         public void EditarItem()
         {
 
+            int acao = 0;
+            Console.WriteLine("Qual campo voce deseja editar??" +
+                              "\n1 - ID" +
+                              "\n2 - Nome");     
+            if(acao== 1)
+            {
+                Console.WriteLine("Digite um novo ID??");
+            }
+            else if(acao== 2)
+            {
+                Console.WriteLine("Digite um Novo Nome??");
+            }
+            else
+            {
+                Console.WriteLine("\nERRO!!!!!" +
+                                  "\nDigite um Campo valido!!!!");
+            }
+            return;
         }
         private void ExcluirItem()
         {
