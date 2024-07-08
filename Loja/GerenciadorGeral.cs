@@ -58,6 +58,7 @@ namespace Loja
             {
                 produto.ExibirDetalhesDoProduto();
             }
+            Console.WriteLine("------------------------------------------");
         }
         public void AdicionarUsuario(Usuario usuario)
         {
@@ -65,6 +66,7 @@ namespace Loja
             usuario.AlterarId(novoID);
             Usuarios.Add(usuario);
         }
+<<<<<<< HEAD
         public void AdicionarItemNoCarrinho()
         {
             
@@ -80,6 +82,17 @@ namespace Loja
                      }
                 }
             return;
+=======
+        public void  ListarCliente()
+        {
+            Console.WriteLine("-------------Lista de Cliente-------------");
+            foreach (Usuario Usuarios in Usuarios)
+            {
+                Usuarios.ExibirDetalhesUsuario();
+            }
+            Console.WriteLine("------------------------------------------");
+        }
+>>>>>>> 31b864b2ebc6fa10620db4ce069fdd796fc94ec8
 
 
 
