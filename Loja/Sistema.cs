@@ -224,7 +224,8 @@ namespace Loja
                                   "\n27 - Velar" +
                                   "\n28 - Aston Martin" +
                                   "\n29 - Lamborghini" +
-                                  "\n30 - Rolls Royce");
+                                  "\n30 - Rolls Royce" +
+                                  "\n31 - Impala ");
                 Console.WriteLine("Digite qual Produto deseja adicionar No carrinho??");
             int pSelecionada = int.Parse(Console.ReadLine());
 

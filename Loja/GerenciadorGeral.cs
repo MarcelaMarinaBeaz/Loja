@@ -49,6 +49,7 @@ namespace Loja
             produtos.Add(new Produto(28, "Aston Martin.", 36.000000, 78));
             produtos.Add(new Produto(29, "Lamborghini.", 38.000000, 78));
             produtos.Add(new Produto(30, "Rolls Royce", 5.999990, 78));
+            produtos.Add(new Produto(31, "Impala", 180.000, 76));
         }
         //Listar produto
         public void ListarProduto()
