@@ -86,7 +86,7 @@ namespace Loja
             }
             else if (acao == 10)
             {
-                
+                CalcularFret();
             }
             else if (acao == 11)
             {
@@ -258,7 +258,7 @@ namespace Loja
         private void CalcularFret()
         {
             int acao = -1;
-            while (acao < 0 || acao > 26)
+            while (acao < 1 || acao > 26)
             {//começo do while
                 Console.WriteLine("---------------------------Calcular Valor do Fretev---------------------------");
                 Console.WriteLine($"1 - Acre " +
@@ -288,51 +288,51 @@ namespace Loja
                                   $"\n25 - Sergipe  " +
                                   $"\n26 - Tocantins ");
                 Console.WriteLine($"Digite o numero que coresponde a seu Estado");
-                acao = int.Parse( Console.ReadLine() );
+                acao = int.Parse(Console.ReadLine());
 
-                if(acao == 1)
+                if (acao == 1)
                 {
-                    Console.WriteLine("60");
+                    Console.WriteLine("O valor do seu fret é: R$60,00 reais");
                 }
                 else if (acao == 2)
                 {
-                    Console.WriteLine("40");
+                    Console.WriteLine("O valor do seu fret é: R$40,00 reais");
                 }
                 else if (acao == 3)
                 {
-                    Console.WriteLine("60");
+                    Console.WriteLine("O valor do seu fret é: R$60,00 reais");
                 }
-                else if(acao == 4)
+                else if (acao == 4)
                 {
-                    Console.WriteLine("60");
+                    Console.WriteLine("O valor do seu fret é: R$60,00 reais");
                 }
                 else if (acao == 5)
                 {
-                    Console.WriteLine("15");
+                    Console.WriteLine("O valor do seu fret é: R$15,00 reais");
                 }
                 else if (acao == 6)
                 {
-                    Console.WriteLine("50");
+                    Console.WriteLine("O valor do seu fret é: R$50,00 reais");
                 }
                 else if (acao == 7)
                 {
-                    Console.WriteLine("15");
+                    Console.WriteLine("O valor do seu fret é: R$15,00 reais");
                 }
                 else if (acao == 8)
                 {
-                    Console.WriteLine("15");
+                    Console.WriteLine("O valor do seu fret é: R$15,00 reais");
                 }
                 else if (acao == 9)
                 {
-                    Console.WriteLine("50");
+                    Console.WriteLine("O valor do seu fret é: R$50,00 reais");
                 }
                 else if (acao == 10)
                 {
-                    Console.WriteLine("40");
+                    Console.WriteLine("O valor do seu fret é: R$40,00 reais");
                 }
                 else if (acao == 11)
                 {
-                    Console.WriteLine("20");
+                    Console.WriteLine("O valor do seu fret é: R$20,00 reais");
                 }
                 else if (acao == 12)
                 {
@@ -341,72 +341,72 @@ namespace Loja
                 }
                 else if (acao == 13)
                 {
-                    Console.WriteLine("50");
+                    Console.WriteLine("O valor do seu fret é: R$50,00 reais");
                 }
                 else if (acao == 14)
                 {
-                    Console.WriteLine("50");
+                    Console.WriteLine("O valor do seu fret é: R$50,00 reais");
                 }
                 else if (acao == 15)
                 {
-                    Console.WriteLine("20");
+                    Console.WriteLine("O valor do seu fret é: R$20,00 rais");
                 }
                 else if (acao == 16)
                 {
-                    Console.WriteLine("50");
+                    Console.WriteLine("O valor do seu fret é: R$50,00 reais");
                 }
                 else if (acao == 17)
                 {
-                    Console.WriteLine("30");
+                    Console.WriteLine("O valor do seu fret é: R$30,00 reais");
                 }
                 else if (acao == 18)
                 {
-                    Console.WriteLine("15");
+                    Console.WriteLine("O valor do seu fret é: R$15,00 reais");
                 }
                 else if (acao == 19)
                 {
-                    Console.WriteLine("40");
+                    Console.WriteLine("O valor do seu fret é: R$40,00 reias");
                 }
                 else if (acao == 20)
                 {
-                    Console.WriteLine("20");
+                    Console.WriteLine("O valor do seu fret é: R$20,00 reais");
                 }
                 else if (acao == 21)
                 {
-                    Console.WriteLine("50");
+                    Console.WriteLine("O valor do seu fret é: R$50,00 reais");
                 }
                 else if (acao == 22)
                 {
-                    Console.WriteLine("60");
+                    Console.WriteLine("O valor do seu fret é: R$60,00 reais");
                 }
                 else if (acao == 23)
                 {
-                    Console.WriteLine("20");
+                    Console.WriteLine("O valor do seu fret é: R$20,00 reais");
                 }
                 else if (acao == 24)
                 {
-                    Console.WriteLine("15");
+                    Console.WriteLine("O valor do seu fret é: R$15,00 reais");
                 }
                 else if (acao == 25)
                 {
-                    Console.WriteLine("30");
+                    Console.WriteLine("O valor do seu fret é: R$30,00 reais");
                 }
-                else if(acao == 26)
+                else if (acao == 26)
                 {
-                    Console.WriteLine("30");
+                    Console.WriteLine("O valor do seu fret é: R$30,00 reais");
                 }
                 else
                 {
-                    Console.WriteLine($"Erro !!!!!!!!!" +
+                    Console.WriteLine("Acão invalida !!!!!!!!!");
+                    Console.WriteLine($"Erro !!!!!!!!! Erro !!!!!!!!!!!" +
                                       $"\nDigite uma opição valida");
                 }
+                Console.WriteLine("------------------------------------------------------------------------------");
+            }//Final while
 
-            }//final  o while
-            Console.WriteLine("------------------------------------------------------------------------------");
-           
 
-        }
-        private void FinalizarPedido()
+            }
+            private void FinalizarPedido()
         {
 
         }
