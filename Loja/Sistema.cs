@@ -15,8 +15,8 @@ namespace Loja
        
         public Sistema()
         {
-            usuario= new Usuario();
-            ger= new GerenciadorGeral();
+            usuario = new Usuario();
+            ger = new GerenciadorGeral();
         }
         public void IniciarSistema()
         {
@@ -113,13 +113,16 @@ namespace Loja
         public void CadastroUsuario()
         {
             int acaoSolicitada = -1;
-            while (acaoSolicitada > 2 || acaoSolicitada < 0)
+            while (acaoSolicitada > 3 || acaoSolicitada < 0)
             {
+                Console.WriteLine("------------------ Cadastrar Usuario ------------------ ");             
                 Console.WriteLine( $"1 - Cadastrar " +
-                               $"\n2 - Editar Cadastro");
+                               $"\n2 - Editar Cadastro" +
+                               $"\n3 - Listar Usuarios");
             Console.WriteLine($"Qual ação deseja realizar?");
              acaoSolicitada = int.Parse(Console.ReadLine());
 
+                //Cadastrar Cliente
                 if (acaoSolicitada == 1)
                 {
                     Console.WriteLine($"Digite o seu nome");
@@ -136,6 +139,7 @@ namespace Loja
                     ger.AdicionarUsuario(u);
 
                 }
+                //Editar Cliente 
                 else if (acaoSolicitada == 2)
                 {
                     int acaoEscolida = -1;
@@ -172,12 +176,18 @@ namespace Loja
                         }
                     }
                 }
-                else if(acaoSolicitada >3 || acaoSolicitada < 0)
+                //Listar Cliente
+                else if (acaoSolicitada == 3)
+                {
+                  ger.ListarCliente();
+                }
+                else 
                 {
                     Console.WriteLine("Ação invalida !!!!!!!!!!!" +
                                       "\nEscolha uma opição valida");
                 }
-              
+                Console.WriteLine("--------------------------------------------------------");
+
             }
            
         }
