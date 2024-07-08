@@ -65,9 +65,27 @@ namespace Loja
             usuario.AlterarId(novoID);
             Usuarios.Add(usuario);
         }
+        public void AdicionarItemNoCarrinho()
+        {
+            
+                int acaoS = -1;
+                while(acaoS < 31 || acaoS >= 1)
+                {
+                     Console.WriteLine("Seu item foi adicionado no carrinho!!!!");
+                     acaoS = int.Parse(Console.ReadLine()); 
+
+                     if (acaoS > 30 || acaoS < 1)
+                     {
+                         Console.WriteLine("Açao invalida!!!!");
+                     }
+                }
+            return;
 
 
-       
+
+        }
+
+        
     }
 
 }

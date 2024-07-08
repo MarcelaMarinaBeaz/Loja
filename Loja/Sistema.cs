@@ -43,7 +43,7 @@ namespace Loja
                               "\n9 - Cadastrar cupom" +
                              "\n10 - Calcular frete" +
                              "\n11 - Finalizar Pedido" +
-                             "------------------------------------------------");
+                             "\n------------------------------------------------");
 
         }
         public void RealizarAcao(int acao)
@@ -62,7 +62,7 @@ namespace Loja
             }
             else if (acao == 4)
             {
-               
+                MostrarItemNoCarrinho();
             }
             else if (acao == 5)
             {
@@ -93,6 +93,9 @@ namespace Loja
                 
             }
         }
+
+        
+
         private int SolicitarAcaoUsuario()
         {
             int acao = -1;
@@ -223,17 +226,15 @@ namespace Loja
                                   "\n29 - Lamborghini" +
                                   "\n30 - Rolls Royce");
                 Console.WriteLine("Digite qual Produto deseja adicionar No carrinho??");
-            int acao= 0;
-            if (acao >= 1 || acao <= 30)
-            {
-                Console.WriteLine("Seu Item foi adicionado ao carrinho");
-            }
-            else
-            {
-                Console.WriteLine("Digite uma ação valida!!!!!!!!!!!");
-            }
-           
+            int pSelecionada = int.Parse(Console.ReadLine());
+
+            ger.AdicionarItemNoCarrinho(pSelecionada);
         }
+        private void MostrarItemNoCarrinho()
+        {
+            throw new NotImplementedException();
+        }
+
         public void EditarItem()
         {
 

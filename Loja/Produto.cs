@@ -32,8 +32,17 @@ namespace Loja
                               $"\nEstoque: {Quant_estoque}");
             Console.WriteLine("-----------------------------------------------------------");
         }
-        
-       
+        public void MostrarItemNoCarrinho()
+        {
+            Console.WriteLine("-------------------Seu Item No Carrinho------------------");
+            Console.WriteLine($"\nId: {id}" +
+                              $"\nNome: {nome}" +
+                              $"\nPreço: {preco}" +
+                              $"\nEstoque: {Quant_estoque}");
+            Console.WriteLine("-----------------------------------------------------------");
+        }
+
+
     }
 
     
