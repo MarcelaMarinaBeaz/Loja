@@ -81,11 +81,11 @@ namespace Loja
             }
             else if (acao == 9)
             {
-                
+                CalcularFret();
             }
             else if (acao == 10)
             {
-                CalcularFret();
+               
             }
             
         }
@@ -231,7 +231,7 @@ namespace Loja
         //4
         private void MostrarItemNoCarrinho()
         {
-           MostrarItemNoCarrinho();
+           ger.MostrarCarrinhoItem();
         }
 
         public void EditarItem()
@@ -253,6 +253,7 @@ namespace Loja
        
         private void CalcularFret()
         {
+            //9
             int acao = -1;
             while (acao < 1 || acao > 26)
             {//começo do while

@@ -86,9 +86,14 @@ namespace Loja
             return;
         }
 
-        public void MostrarItemCarrinho()
+        public void MostrarCarrinhoItem()
         {
-           
+            Console.WriteLine("------------- Itens -------------");
+            foreach (Produto produtos in produtos)
+            {
+                produtos.MostrarItemNoCarrinho();
+            }
+            Console.WriteLine("------------------------------------------");
         }
 
         public void  ListarCliente()
