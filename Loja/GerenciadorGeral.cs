@@ -51,7 +51,14 @@ namespace Loja
             produtos.Add(new Produto(29, "Lamborghini.", 38000000, 78));
             produtos.Add(new Produto(30, "Rolls Royce", 5999990, 78));
             produtos.Add(new Produto(31, "Impala", 180000, 76));
+
+            //Usuarios
+            Usuarios.Add(new Usuario(1, "Julia", "julia@gmail.com", "Rua ..... .. .... n°50"));
+            Usuarios.Add(new Usuario(2, "Marcela", "marcela@gmail.com", "Rua ..... .. .... n°105"));
+            Usuarios.Add(new Usuario(3, "Paulo", "pauulo@gmail.com", "Rua ..... .. .... n°500"));
         }
+
+       
         //Listar produto
         public void ListarProduto()
         {
