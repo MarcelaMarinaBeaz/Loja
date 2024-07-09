@@ -14,10 +14,7 @@ namespace Loja
         private string email { get; set; }
         private string endereco { get; set; }
 
-        public int PegarId()
-        {
-            return id;
-        }
+
 
         public Usuario(int id, string nome, string email, string endereco)
         {
@@ -26,6 +23,10 @@ namespace Loja
             this.email = email;
             this.endereco = endereco;
             
+        }
+        public int PegarId()
+        {
+            return id;
         }
 
         public Usuario()

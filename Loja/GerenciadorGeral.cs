@@ -64,7 +64,7 @@ namespace Loja
         }
         public void AdicionarUsuario(Usuario usuario)
         {
-            int novoID = Usuarios.Max(usuario => usuario.PegarId() + 1);
+            int novoID = Usuarios.Max(selector: usuario => usuario.PegarId() + 1);
             usuario.AlterarId(novoID);
             Usuarios.Add(usuario);
         }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -145,7 +146,10 @@ namespace Loja
                     int acaoEscolida = -1;
                     while (acaoEscolida > 3 || acaoEscolida < 0)
                     {
-                        //usuario.ExibirDetalhesUsuario();
+                        //ger.ListarCliente();
+                        //Console.WriteLine("Qual o id do usuario que deseja editar ?");
+                        //int idescolido = int.Parse(Console.ReadLine());
+
                         Console.WriteLine($"1 - Editar Nome" +
                                   $"2 - Editar Email" +
                                   $"3 - Editar Endereço");
