@@ -73,7 +73,7 @@ namespace Loja
             }
             else if (acao == 7)
             {
-               
+                CadastrarCupom();
             }
             else if (acao == 8)
             {
@@ -266,15 +266,16 @@ namespace Loja
             
             
         }
-
+        //7
         private void CadastrarCupom()
         {
-
+            Console.WriteLine("");
         }
        
+        //8
         private void CalcularFret()
         {
-            //9
+            
             int acao = -1;
             while (acao < 1 || acao > 26)
             {//começo do while
@@ -423,7 +424,9 @@ namespace Loja
             }//Final while
 
 
-            }
+        }
+
+        //9
             private void FinalizarPedido()
         {
 
