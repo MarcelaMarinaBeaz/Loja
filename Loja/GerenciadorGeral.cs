@@ -118,12 +118,15 @@ namespace Loja
         }
 
 
-
-
+        public void ExcluirProduto(Produto produto)
+        {
+            produtos.Remove(produto);
         }
 
-        
     }
+
+        
+}
 
 
 

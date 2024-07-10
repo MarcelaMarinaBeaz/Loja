@@ -70,7 +70,7 @@ namespace Loja
             }
             else if (acao == 6)
             {
-
+                ExcluirItem();
             }
             else if (acao == 7)
             {
@@ -274,7 +274,7 @@ namespace Loja
         }
         private void ExcluirItem()
         {
-
+           
         }
         private void RealinharEstoque()
         {
