@@ -81,7 +81,7 @@ namespace Loja
             }
             else if (acao == 9)
             {
-                
+                FinalizarPedido();
             }
             
         }
@@ -427,11 +427,17 @@ namespace Loja
             }
         //9  
 
+<<<<<<< HEAD
             private void FinalizarPedido()
+=======
+
+       
+        private void FinalizarPedido()
+>>>>>>> 3069431b414bb82a9caf1c65258e9858b21f1758
 
         {
             ger.ListarProduto();
-
+            ger.Finalizar();
 
         }
         
