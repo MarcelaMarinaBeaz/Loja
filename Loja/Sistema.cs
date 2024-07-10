@@ -39,10 +39,9 @@ namespace Loja
                               "\n4 - Mostrar Item do Carrinho" +
                               "\n5 - Editar item" +
                               "\n6 - Excluir" +
-                              "\n7 - Realinhar fluxo do estoque" +
-                              "\n8 - Cadastrar cupom" +
-                              "\n9 - Calcular frete" +
-                              "\n10 - Finalizar Pedido" +
+                              "\n7 - Cadastrar cupom" +
+                              "\n8 - Calcular frete" +
+                              "\n9 - Finalizar Pedido" +
                               "\n------------------------------------------------");
 
         }
@@ -78,15 +77,11 @@ namespace Loja
             }
             else if (acao == 8)
             {
-                
+                CalcularFret();
             }
             else if (acao == 9)
             {
-                CalcularFret();
-            }
-            else if (acao == 10)
-            {
-               
+                
             }
             
         }
@@ -110,6 +105,7 @@ namespace Loja
             return acao;
 
         }
+        
         //1
         public void CadastroUsuario()
         {
@@ -150,7 +146,7 @@ namespace Loja
                     {
                         ger.ListarCliente();
                         Console.WriteLine("Qual o id do usuario que deseja editar ?");
-                        int idescolido = int.Parse(Console.ReadLine());
+                        int IDescolido = int.Parse(Console.ReadLine());
 
                         Console.WriteLine($"1 - Editar Nome" +
                                   $"\n2 - Editar Email" +
@@ -158,28 +154,8 @@ namespace Loja
                         Console.WriteLine("Qual area Deseja editar???");
                         acaoEscolida = int.Parse(Console.ReadLine());
 
-                        if (acaoEscolida == 1)
-                        {
-                            //usuario
-                            Console.WriteLine("Novo nome de usuario");
-                            string Nome = Console.ReadLine();
-                        }
-                        else if (acaoEscolida == 2)
-                        {
-                            //email
-                            Console.WriteLine("Novo email do usuario");
-                            string Email = Console.ReadLine();
-                        }
-                        else if (acaoEscolida == 3)
-                        {
-                            //endereço
-                            Console.WriteLine("Novo endereço do usuario");
-                           string  Endereco = Console.ReadLine();
-                        }
-                        else if (acaoEscolida > 3 || acaoEscolida < 0)
-                        {
-                            Console.WriteLine("Erro!!! Digite uma opção valida");
-                        }
+                        ger.EditarCliente(acaoEscolida, IDescolido);
+
                     }
                 }
                 //Listar Cliente
@@ -250,6 +226,7 @@ namespace Loja
            ger.MostrarCarrinhoItem();
         }
 
+        //5
         public void EditarItem()
         {
 
@@ -272,14 +249,24 @@ namespace Loja
             }
             return;
         }
+        
+        //6
         private void ExcluirItem()
         {
-           
-        }
-        private void RealinharEstoque()
-        {
+            int pro = 0;
+            int produ = 0;
 
+            ger.ListarProduto();
+            Console.WriteLine("Qual ID do produto deseja Excluir??");
+            pro = int.Parse(Console.ReadLine());
+            
+            
+                Produto produto = ger.BuscarProdutoPorId(pro);
+                ger.ExcluirProduto(produto);
+            
+            
         }
+
         private void CadastrarCupom()
         {
 

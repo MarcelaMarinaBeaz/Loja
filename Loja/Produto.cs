@@ -21,7 +21,12 @@ namespace Loja
             this.preco = preco;
             this.Quant_estoque = Quant_estoque;
         }
-       
+        public int PegarID()
+        {
+            return id;
+        }
+
+
 
         public void ExibirDetalhesDoProduto()
         {

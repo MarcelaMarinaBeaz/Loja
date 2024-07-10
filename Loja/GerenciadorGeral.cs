@@ -71,6 +71,8 @@ namespace Loja
             }
             Console.WriteLine("------------------------------------------");
         }
+
+        //Adicionar e alterar o id automaticamente do usuario
         public void AdicionarUsuario(Usuario usuario)
         {
             int novoID = Usuarios.Max(selector: usuario => usuario.PegarId() + 1);
@@ -78,6 +80,7 @@ namespace Loja
             Usuarios.Add(usuario);
         }
 
+        //Adicionar item ao carrinho
         public void AdicionarItemNoCarrinho()
         {
 
@@ -95,6 +98,7 @@ namespace Loja
             return;
         }
 
+        //Mostrar itens que temos no carrinho
         public void MostrarCarrinhoItem()
         {
             Console.WriteLine("------------- Itens -------------");
@@ -105,6 +109,7 @@ namespace Loja
             Console.WriteLine("------------------------------------------");
         }
 
+        //Listar todos os usuarios que temo cadastados
         public void  ListarCliente()
         {
             Console.WriteLine("-------------Lista de Cliente-------------");
@@ -117,16 +122,70 @@ namespace Loja
             Console.WriteLine("------------------------------------------");
         }
 
+        //Buscar cliente deacordo com seu id 
+        public Usuario BuscarCientePorId(int ID)
+        {
+            foreach (Usuario Usuarios in Usuarios)
+            {
+                if (Usuarios.PegarId() == ID)
+                {
+                    return Usuarios;
+                }
+            }
+            return null;
+        }
 
+        //Buscar Produto deacordo com seu id 
+        public Produto BuscarProdutoPorId(int ID)
+        {
+            foreach (Produto produtos in produtos)
+            {
+                if (produtos.PegarID() == ID)
+                {
+                    return produtos;
+                }
+            }
+            return null;
+        }
+
+        //Excluir um produto
         public void ExcluirProduto(Produto produto)
         {
             produtos.Remove(produto);
         }
 
+        //Editar o cliente apos escolher o usuario no cadigo do sistema
+        internal void EditarCliente(int acaoEscolida, int descolido)
+        {
+            if (acaoEscolida == 1)
+            {
+                //usuario
+                Console.WriteLine("Novo nome de usuario");
+                string Nome = Console.ReadLine();
+            }
+            else if (acaoEscolida == 2)
+            {
+                //email
+                Console.WriteLine("Novo email do usuario");
+                string Email = Console.ReadLine();
+            }
+            else if (acaoEscolida == 3)
+            {
+                //endereço
+                Console.WriteLine("Novo endereço do usuario");
+                string Endereco = Console.ReadLine();
+            }
+
+
+        }//final editar
+
+
     }
 
-        
 }
+
+        
+
 
 
 
