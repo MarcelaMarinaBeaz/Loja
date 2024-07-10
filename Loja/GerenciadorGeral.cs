@@ -10,12 +10,14 @@ namespace Loja
     {
         List<Usuario> Usuarios { get; set; }
         List<Produto> produtos { get; set; }
+        List<Cupom> cupoms { get; set; }
         
 
         public GerenciadorGeral() 
         {
             Usuarios = new List<Usuario>();
             produtos = new List<Produto>();
+            cupoms = new List<Cupom>();
             InicializarSistema();
         }
         public void InicializarSistema()
@@ -56,20 +58,36 @@ namespace Loja
             Usuarios.Add(new Usuario(1, "Julia", "julia@gmail.com", "Rua ..... .. .... n°50"));
             Usuarios.Add(new Usuario(2, "Marcela", "marcela@gmail.com", "Rua ..... .. .... n°105"));
             Usuarios.Add(new Usuario(3, "Paulo", "pauulo@gmail.com", "Rua ..... .. .... n°500"));
+
+            //Cupom
+            cupoms.Add(new Cupom(1,"Cupom1"));
+            cupoms.Add(new Cupom(2, "Cupom2"));
+            cupoms.Add(new Cupom(3, "Cupom3"));
+            cupoms.Add(new Cupom(4, "Cupom4"));
+
         }
 
+        //Listar cupons
+        public void ListarCupom()
+        {
+            Console.WriteLine("-------------Cupons Valodos-------------");
+            foreach(Cupom cupom in cupoms)
+            {
+                Console.WriteLine("---------------------------------------");
+                cupom.ExibirCupomDisponivel();
+            }
+
+            Console.WriteLine("----------------------------------------");
+        }
        
         //Listar produto
         public void ListarProduto()
         {
-            Console.WriteLine("-------------Lista de Produto-------------");
             foreach (Produto produto in produtos)
             {
-                Console.WriteLine("---------------------------------------");
                 produto.ExibirDetalhesDoProduto();
                
             }
-            Console.WriteLine("------------------------------------------");
         }
 
         //Adicionar e alterar o id automaticamente do usuario

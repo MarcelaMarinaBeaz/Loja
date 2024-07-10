@@ -269,7 +269,7 @@ namespace Loja
         //7
         private void CadastrarCupom()
         {
-            Console.WriteLine("");
+           ger.ListarCupom();
         }
 
        
@@ -424,14 +424,9 @@ namespace Loja
                 }
                 Console.WriteLine("------------------------------------------------------------------------------");
             }//Final while
-
-
-<<<<<<< HEAD
             }
         //9  
 
-
-       
             private void FinalizarPedido()
 
         {

@@ -6,20 +6,33 @@ using System.Threading.Tasks;
 
 namespace Loja
 {
-    public  class Cupom
+    public class Cupom
     {
-        private string Codigo_Cupom { get; set; }
+        private string CodigoCupom { get; set; }
+        private int  Id { get; set; }
+    public Cupom(int id, string codCupom)
+        {
+            Id = id;
+            CodigoCupom = codCupom;
 
-        public Cupom(string cod_cupom)
-        { 
-            Codigo_Cupom= cod_cupom;
+        }
+
+        public int PegarID()
+        {
+            return Id;
         }
 
         public string PegarCupom()
         {
-            return Codigo_Cupom;
+            return CodigoCupom;
         }
 
+        public void ExibirCupomDisponivel()
+        {
+            Console.WriteLine($"--------------- Cupom {Id} ---------------" +
+                              $"\nCodigo de Cupom Valido: {CodigoCupom}" +
+                              $"\n----------------------------------------");
+        }
 
     }
 }
