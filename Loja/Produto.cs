@@ -46,7 +46,16 @@ namespace Loja
                               $"\nEstoque: {Quant_estoque}");
             Console.WriteLine("-----------------------------------------------------------");
         }
-
+        public void Finalizando()
+        {
+            Console.WriteLine("-----------------------Finalizando Pedido--------------------------");
+            Console.WriteLine($"\nId: {id}" +
+                              $"\nO seu Produto: {nome}" +
+                              $"\nNo Valor de: {preco}");
+            Console.WriteLine("O seu pedido sera calculado, ai finalizaremos o" +
+                              "\n pedido por completo!!!");
+        }
+        
 
     }
 

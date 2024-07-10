@@ -183,8 +183,12 @@ namespace Loja
 
         public void Finalizar()
         {
-            Console.WriteLine("-----------------------Finalizando Pedido--------------------------");
-
+            Console.WriteLine("------------- Lista dos produtos -------------");
+            foreach (Produto produtos in produtos)
+            {
+                produtos.Finalizando();
+            }
+            Console.WriteLine("----------------------------------------------");
         }
     }
 

@@ -81,7 +81,7 @@ namespace Loja
             }
             else if (acao == 9)
             {
-                
+                FinalizarPedido();
             }
             
         }
@@ -436,7 +436,7 @@ namespace Loja
 
         {
             ger.ListarProduto();
-
+            ger.Finalizar();
 
         }
         
