@@ -126,6 +126,8 @@ namespace Loja
                 //Cadastrar Cliente
                 if (acaoSolicitada == 1)
                 {
+                    int id = 0;
+
                     Console.WriteLine($"Digite o seu nome");
                     string Nome = Console.ReadLine();
 
@@ -135,7 +137,7 @@ namespace Loja
                     Console.WriteLine($"Digite o Endereso de sua casa");
                     string Endereco = Console.ReadLine();
 
-                    Usuario u = new Usuario(1, Nome, Email, Endereco);
+                    Usuario u = new Usuario(id, Nome, Email, Endereco);
 
                     ger.AdicionarUsuario(u);
 
@@ -146,13 +148,13 @@ namespace Loja
                     int acaoEscolida = -1;
                     while (acaoEscolida > 3 || acaoEscolida < 0)
                     {
-                        //ger.ListarCliente();
-                        //Console.WriteLine("Qual o id do usuario que deseja editar ?");
-                        //int idescolido = int.Parse(Console.ReadLine());
+                        ger.ListarCliente();
+                        Console.WriteLine("Qual o id do usuario que deseja editar ?");
+                        int idescolido = int.Parse(Console.ReadLine());
 
                         Console.WriteLine($"1 - Editar Nome" +
-                                  $"2 - Editar Email" +
-                                  $"3 - Editar Endereço");
+                                  $"\n2 - Editar Email" +
+                                  $"\n3 - Editar Endereço");
                         Console.WriteLine("Qual area Deseja editar???");
                         acaoEscolida = int.Parse(Console.ReadLine());
 

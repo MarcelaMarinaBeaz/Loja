@@ -37,9 +37,9 @@ namespace Loja
         {
 
             Console.WriteLine($"ID do usuario: {id}" +
-                              $"Nome do Usuario: {nome}  " +
-                              $"Email do Usuario: {email}" +
-                              $"Endereço do Usuario: {endereco}");
+                              $"\nNome do Usuario: {nome}  " +
+                              $"\nEmail do Usuario: {email}" +
+                              $"\nEndereço do Usuario: {endereco}");
         }
         public void AlterarId(int Id)
         {

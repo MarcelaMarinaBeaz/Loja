@@ -65,7 +65,9 @@ namespace Loja
             Console.WriteLine("-------------Lista de Produto-------------");
             foreach (Produto produto in produtos)
             {
+                Console.WriteLine("---------------------------------------");
                 produto.ExibirDetalhesDoProduto();
+               
             }
             Console.WriteLine("------------------------------------------");
         }
@@ -108,7 +110,9 @@ namespace Loja
             Console.WriteLine("-------------Lista de Cliente-------------");
             foreach (Usuario Usuarios in Usuarios)
             {
+                Console.WriteLine("---------------------------------------");
                 Usuarios.ExibirDetalhesUsuario();
+              
             }
             Console.WriteLine("------------------------------------------");
         }
