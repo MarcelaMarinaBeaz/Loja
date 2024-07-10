@@ -183,6 +183,7 @@ namespace Loja
 
         public void Finalizar()
         {
+            Console.WriteLine("-----------------------Finalizando Pedido--------------------------");
 
         }
     }

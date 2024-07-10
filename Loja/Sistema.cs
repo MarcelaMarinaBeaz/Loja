@@ -432,7 +432,7 @@ namespace Loja
 
 
        
-            private void FinalizarPedido()
+        private void FinalizarPedido()
 
         {
             ger.ListarProduto();
