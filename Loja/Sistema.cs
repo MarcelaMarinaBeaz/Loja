@@ -81,17 +81,17 @@ namespace Loja
             }
             else if (acao == 9)
             {
-                FinalizarPedido();
+                
             }
             
         }
 
         
-
+        //Validar de ação do usuario 
         private int SolicitarAcaoUsuario()
         {
             int acao = -1;
-            while (acao <= 0 || acao > 11)
+            while (acao <= 0 || acao > 9)
             {
                 Console.WriteLine($"Qual ação deseja fazer ?");
                 acao = int.Parse(Console.ReadLine());
@@ -270,6 +270,7 @@ namespace Loja
         private void CadastrarCupom()
         {
            ger.ListarCupom();
+            Console.WriteLine("");
         }
 
        
@@ -427,17 +428,11 @@ namespace Loja
             }
         //9  
 
-<<<<<<< HEAD
             private void FinalizarPedido()
-=======
-
-       
-        private void FinalizarPedido()
->>>>>>> 3069431b414bb82a9caf1c65258e9858b21f1758
 
         {
             ger.ListarProduto();
-            ger.Finalizar();
+
 
         }
         
