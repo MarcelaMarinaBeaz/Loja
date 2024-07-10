@@ -147,7 +147,7 @@ namespace Loja
                         ger.ListarCliente();
                         Console.WriteLine("Qual o id do usuario que deseja editar ?");
                         int IDescolido = int.Parse(Console.ReadLine());
-
+                        Console.WriteLine("------------------------------------------------");
                         Console.WriteLine($"1 - Editar Nome" +
                                   $"\n2 - Editar Email" +
                                   $"\n3 - Editar Endereço");

@@ -45,7 +45,11 @@ namespace Loja
         {
             id = Id;
         }
-        
-       
+
+        public void AlterarNome(string Nome)
+        {
+            Nome = nome;
+        }
+
     }
 }

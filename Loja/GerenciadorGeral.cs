@@ -155,13 +155,15 @@ namespace Loja
         }
 
         //Editar o cliente apos escolher o usuario no cadigo do sistema
-        internal void EditarCliente(int acaoEscolida, int descolido)
+        internal void EditarCliente(int acaoEscolida, int descolido )
         {
+            Usuario u = new Usuario();
             if (acaoEscolida == 1)
             {
                 //usuario
                 Console.WriteLine("Novo nome de usuario");
                 string Nome = Console.ReadLine();
+                u.AlterarNome(Nome);
             }
             else if (acaoEscolida == 2)
             {
