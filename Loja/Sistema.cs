@@ -266,12 +266,12 @@ namespace Loja
             
             
         }
-
+        //7
         private void CadastrarCupom()
         {
 
         }
-       
+        //8
         private void CalcularFret()
         {
             //9
@@ -424,8 +424,11 @@ namespace Loja
 
 
             }
-            private void FinalizarPedido()
+        //9  
+        private void FinalizarPedido()
         {
+            ger.ListarProduto();
+
 
         }
         

@@ -181,7 +181,10 @@ namespace Loja
 
         }//final editar
 
+        public void Finalizar()
+        {
 
+        }
     }
 
 }
