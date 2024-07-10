@@ -117,10 +117,41 @@ namespace Loja
             Console.WriteLine("------------------------------------------");
         }
 
+        public Usuario BuscarCientePorId(int ID)
+        {
+            foreach (Usuario Usuarios in Usuarios)
+            {
+                if (Usuarios.PegarId() == ID)
+                {
+                    return Usuarios;
+                }
+            }
+            return null;
+        }
 
-
+        internal void EditarCliente(int acaoEscolida, int descolido)
+        {
+            if (acaoEscolida == 1)
+            {
+                //usuario
+                Console.WriteLine("Novo nome de usuario");
+                string Nome = Console.ReadLine();
+            }
+            else if (acaoEscolida == 2)
+            {
+                //email
+                Console.WriteLine("Novo email do usuario");
+                string Email = Console.ReadLine();
+            }
+            else if (acaoEscolida == 3)
+            {
+                //endereço
+                Console.WriteLine("Novo endereço do usuario");
+                string Endereco = Console.ReadLine();
+            }
 
         }
+    }
 
         
     }

@@ -150,7 +150,7 @@ namespace Loja
                     {
                         ger.ListarCliente();
                         Console.WriteLine("Qual o id do usuario que deseja editar ?");
-                        int idescolido = int.Parse(Console.ReadLine());
+                        int IDescolido = int.Parse(Console.ReadLine());
 
                         Console.WriteLine($"1 - Editar Nome" +
                                   $"\n2 - Editar Email" +
@@ -158,28 +158,8 @@ namespace Loja
                         Console.WriteLine("Qual area Deseja editar???");
                         acaoEscolida = int.Parse(Console.ReadLine());
 
-                        if (acaoEscolida == 1)
-                        {
-                            //usuario
-                            Console.WriteLine("Novo nome de usuario");
-                            string Nome = Console.ReadLine();
-                        }
-                        else if (acaoEscolida == 2)
-                        {
-                            //email
-                            Console.WriteLine("Novo email do usuario");
-                            string Email = Console.ReadLine();
-                        }
-                        else if (acaoEscolida == 3)
-                        {
-                            //endereço
-                            Console.WriteLine("Novo endereço do usuario");
-                           string  Endereco = Console.ReadLine();
-                        }
-                        else if (acaoEscolida > 3 || acaoEscolida < 0)
-                        {
-                            Console.WriteLine("Erro!!! Digite uma opção valida");
-                        }
+                        ger.EditarCliente(acaoEscolida, IDescolido);
+
                     }
                 }
                 //Listar Cliente
