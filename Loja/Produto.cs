@@ -12,6 +12,7 @@ namespace Loja
         private string nome { get; set; }
        private double preco { get; set;}
         private int Quant_estoque { get; set; }
+        private double cupom { get; set; }
        
 
         public Produto(int id, string nome, double preco, int Quant_estoque)
@@ -48,12 +49,15 @@ namespace Loja
         }
         public void Finalizando()
         {
-            Console.WriteLine("-----------------------Finalizando Pedido--------------------------");
-            Console.WriteLine($"\nId: {id}" +
-                              $"\nO seu Produto: {nome}" +
-                              $"\nNo Valor de: {preco}");
-            Console.WriteLine("O seu pedido sera calculado, ai finalizaremos o" +
-                              "\n pedido por completo!!!");
+            
+            Console.WriteLine("-----------------------Finalizando Seu Pedido--------------------------");
+            Console.WriteLine($"\nO seu Produto: {nome}" +
+                              $"\nNo Valor de: {preco}" +
+                              $"\nCom o cupom de desconto no valor de: {cupom}");
+            Console.WriteLine("\nO seu pedido sera calculado o Valor do Produto, o valor do" +
+                              "\nfrete mais o valor de cupom de Desconto, MAS ANTES ESCOLHA UMA AÇÃO PARA " +
+                              "\nQUE POSSAMOS FINALIZAR O SEU PEDIDO!!!!!");
+                             
         }
         
 

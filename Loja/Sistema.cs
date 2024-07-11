@@ -426,7 +426,7 @@ namespace Loja
             }//Final while
 
 
-<<<<<<< HEAD
+
             }
         //9  
 
@@ -437,6 +437,32 @@ namespace Loja
         {
             ger.ListarProduto();
             ger.Finalizar();
+            int acao = 0;
+            Console.WriteLine("--------------------------------------------------" +
+                              "Deseja finalizar o seu pedido???");
+            Console.WriteLine($"1 - Finalizar Pedido" +
+                              $"2 - Cancelar seu Pedido");
+            Console.WriteLine("--------------------------------------------------");
+            if(acao == 1)
+            {
+                double preco = 265.900;
+                double frete = 60.00;
+                double cupom = 30.00;
+                DateTime hoje = DateTime.Now;
+                DateTime dataDevolucao = hoje.AddDays(7);
+                dataDevolucao = dataDevolucao.AddHours(2);
+                Console.WriteLine($"Seu pedido foi finalizado as {hoje} com sucesso!!!" +
+                                  $"No valor de {preco+ frete- cupom}");
+            }
+            else  
+            {
+                Console.WriteLine("SEU PEDIDO FOI CANCELADO, VOLTE AO INICIO PARA FAZER OUTRA COMPRA!!!!");
+            }
+            
+
+           
+
+
 
         }
         
