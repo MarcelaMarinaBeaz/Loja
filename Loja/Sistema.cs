@@ -294,7 +294,7 @@ namespace Loja
             }
         }
 
-       
+
 
         //8
         private void CalcularFret()
@@ -445,23 +445,18 @@ namespace Loja
                 }
                 Console.WriteLine("------------------------------------------------------------------------------");
             }//Final while
-<<<<<<< HEAD
-
-
-
-            }
-        //9  
-
-
-=======
         }
->>>>>>> c549c5e406049b80b871bdca391864ee8ae0290b
+
+
+
+    
+
        
         //9  
         private void FinalizarPedido()
         {
             ger.ListarProduto();
-<<<<<<< HEAD
+
             ger.Finalizar();
             int acao = 0;
             Console.WriteLine("--------------------------------------------------" +
@@ -488,8 +483,6 @@ namespace Loja
 
            
 
-=======
->>>>>>> c549c5e406049b80b871bdca391864ee8ae0290b
 
 
         }
