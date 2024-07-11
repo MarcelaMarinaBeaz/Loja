@@ -47,18 +47,7 @@ namespace Loja
                               $"\nEstoque: {Quant_estoque}");
             Console.WriteLine("-----------------------------------------------------------");
         }
-        public void Finalizando()
-        {
-            
-            Console.WriteLine("-----------------------Finalizando Seu Pedido--------------------------");
-            Console.WriteLine($"\nO seu Produto: {nome}" +
-                              $"\nNo Valor de: {preco}" +
-                              $"\nCom o cupom de desconto no valor de: {cupom}");
-            Console.WriteLine("\nO seu pedido sera calculado o Valor do Produto, o valor do" +
-                              "\nfrete mais o valor de cupom de Desconto, MAS ANTES ESCOLHA UMA AÇÃO PARA " +
-                              "\nQUE POSSAMOS FINALIZAR O SEU PEDIDO!!!!!");
-                             
-        }
+        
         
 
     }
