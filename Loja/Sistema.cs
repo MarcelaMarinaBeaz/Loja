@@ -81,17 +81,17 @@ namespace Loja
             }
             else if (acao == 9)
             {
-                FinalizarPedido();
+                
             }
             
         }
 
         
-
+        //Validar de ação do usuario 
         private int SolicitarAcaoUsuario()
         {
             int acao = -1;
-            while (acao <= 0 || acao > 11)
+            while (acao <= 0 || acao > 9)
             {
                 Console.WriteLine($"Qual ação deseja fazer ?");
                 acao = int.Parse(Console.ReadLine());
@@ -266,10 +266,32 @@ namespace Loja
             
             
         }
+
         //7
         private void CadastrarCupom()
         {
-            Console.WriteLine("");
+            int acao = -1;
+            while (acao >1 || acao >2)
+            {
+                Console.WriteLine($"1 - Ver Cupons Disponiveis" +
+                                  $"\n2 - Cadasrar Cupom" +
+                                  $"\nQual ação deseja realizar ??");
+                acao = int.Parse(Console.ReadLine());
+
+                if(acao == 1)
+                {
+                    ger.ListarCupom();
+                }
+                else if(acao == 2)
+                {
+
+                }
+                else
+                {
+                    Console.WriteLine("Opição invalida !!!!!!!!!!!!!!" +
+                                      "\nEscolha uma opição invalida");
+                }
+            }
         }
 
        
@@ -277,7 +299,6 @@ namespace Loja
         //8
         private void CalcularFret()
         {
-            
             int acao = -1;
             while (acao < 1 || acao > 26)
             {//começo do while
@@ -424,6 +445,7 @@ namespace Loja
                 }
                 Console.WriteLine("------------------------------------------------------------------------------");
             }//Final while
+<<<<<<< HEAD
 
 
 
@@ -431,11 +453,15 @@ namespace Loja
         //9  
 
 
+=======
+        }
+>>>>>>> c549c5e406049b80b871bdca391864ee8ae0290b
        
+        //9  
         private void FinalizarPedido()
-
         {
             ger.ListarProduto();
+<<<<<<< HEAD
             ger.Finalizar();
             int acao = 0;
             Console.WriteLine("--------------------------------------------------" +
@@ -462,6 +488,8 @@ namespace Loja
 
            
 
+=======
+>>>>>>> c549c5e406049b80b871bdca391864ee8ae0290b
 
 
         }
