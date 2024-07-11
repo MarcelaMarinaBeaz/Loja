@@ -10,14 +10,14 @@ namespace Loja
     {
         List<Usuario> Usuarios { get; set; }
         List<Produto> produtos { get; set; }
-        List<Cupom> cupoms { get; set; }
+        List<Cupom> cupom { get; set; }
         
 
         public GerenciadorGeral() 
         {
             Usuarios = new List<Usuario>();
             produtos = new List<Produto>();
-            cupoms = new List<Cupom>();
+            cupom = new List<Cupom>();
             InicializarSistema();
         }
         public void InicializarSistema()
@@ -60,10 +60,9 @@ namespace Loja
             Usuarios.Add(new Usuario(3, "Paulo", "pauulo@gmail.com", "Rua ..... .. .... n°500"));
 
             //Cupom
-            cupoms.Add(new Cupom(1,"Cupom1"));
-            cupoms.Add(new Cupom(2, "Cupom2"));
-            cupoms.Add(new Cupom(3, "Cupom3"));
-            cupoms.Add(new Cupom(4, "Cupom4"));
+            cupom.Add(new Cupom(1, "Impala1967", 30));
+            cupom.Add(new Cupom(2, "CivicG10",30));
+            cupom.Add(new Cupom(3, "Rural1970", 30));
 
         }
 
@@ -71,7 +70,7 @@ namespace Loja
         public void ListarCupom()
         {
             Console.WriteLine("-------------Cupons Valodos-------------");
-            foreach(Cupom cupom in cupoms)
+            foreach(Cupom cupom in cupom)
             {
                 Console.WriteLine("---------------------------------------");
                 cupom.ExibirCupomDisponivel();
@@ -79,6 +78,9 @@ namespace Loja
 
             Console.WriteLine("----------------------------------------");
         }
+
+
+
        
         //Listar produto
         public void ListarProduto()
@@ -98,6 +100,15 @@ namespace Loja
             Usuarios.Add(usuario);
         }
 
+        //Adicionar e alterar o id automaticamente do Cupom de desconto
+        public void AdicionarUsuario(Cupom cupom)
+        {
+            int novoId = Usuarios.Max(selector: cupom => cupom.PegarId() + 1);
+            cupom.AlterarId(novoId);
+            Cupom.Add(cupom);
+
+        }
+
         //Adicionar item ao carrinho
         public void AdicionarItemNoCarrinho()
         {
@@ -108,7 +119,7 @@ namespace Loja
                 Console.WriteLine("Seu item foi adicionado no carrinho!!!!");
                 acaoS = int.Parse(Console.ReadLine());
 
-                if (acaoS > 31 || acaoS < 1)
+                if (acaoS > 32 || acaoS < 1)
                 {
                     Console.WriteLine("Açao invalida!!!!");
                 }

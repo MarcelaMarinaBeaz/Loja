@@ -10,16 +10,23 @@ namespace Loja
     {
         private string CodigoCupom { get; set; }
         private int  Id { get; set; }
-    public Cupom(int id, string codCupom)
+        private double Valor { get; set; }
+    public Cupom(int id, string codCupom, double valor)
         {
             Id = id;
             CodigoCupom = codCupom;
-
+          Valor= valor;
         }
+
 
         public int PegarID()
         {
             return Id;
+        }
+
+        public void AlterarId(int id)
+        {
+            Id = id;
         }
 
         public string PegarCupom()
@@ -30,9 +37,14 @@ namespace Loja
         public void ExibirCupomDisponivel()
         {
             Console.WriteLine($"--------------- Cupom {Id} ---------------" +
-                              $"\nCodigo de Cupom Valido: {CodigoCupom}" +
+                              $"\nCupom Valido: {CodigoCupom}" +
+                              $"\nValor de desconto: {Valor}"+
                               $"\n----------------------------------------");
         }
 
+        public static void Add(Cupom cupom)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

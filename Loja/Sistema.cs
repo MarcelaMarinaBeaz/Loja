@@ -266,11 +266,32 @@ namespace Loja
             
             
         }
+
         //7
         private void CadastrarCupom()
         {
-           ger.ListarCupom();
-            Console.WriteLine("");
+            int acao = -1;
+            while (acao >1 || acao >2)
+            {
+                Console.WriteLine($"1 - Ver Cupons Disponiveis" +
+                                  $"\n2 - Cadasrar Cupom" +
+                                  $"\nQual ação deseja realizar ??");
+                acao = int.Parse(Console.ReadLine());
+
+                if(acao == 1)
+                {
+                    ger.ListarCupom();
+                }
+                else if(acao == 2)
+                {
+
+                }
+                else
+                {
+                    Console.WriteLine("Opição invalida !!!!!!!!!!!!!!" +
+                                      "\nEscolha uma opição invalida");
+                }
+            }
         }
 
        
@@ -278,7 +299,6 @@ namespace Loja
         //8
         private void CalcularFret()
         {
-            
             int acao = -1;
             while (acao < 1 || acao > 26)
             {//começo do while
@@ -425,11 +445,10 @@ namespace Loja
                 }
                 Console.WriteLine("------------------------------------------------------------------------------");
             }//Final while
-            }
+        }
+       
         //9  
-
-            private void FinalizarPedido()
-
+        private void FinalizarPedido()
         {
             ger.ListarProduto();
 
