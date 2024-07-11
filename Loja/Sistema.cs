@@ -81,7 +81,7 @@ namespace Loja
             }
             else if (acao == 9)
             {
-                
+                FinalizarPedido();
             }
             
         }
@@ -445,51 +445,54 @@ namespace Loja
                 }
                 Console.WriteLine("------------------------------------------------------------------------------");
             }//Final while
-<<<<<<< HEAD
 
 
 
-            }
-        //9  
 
-
-=======
         }
->>>>>>> c549c5e406049b80b871bdca391864ee8ae0290b
+        
+
+
+
+        
+
        
         //9  
         private void FinalizarPedido()
         {
             ger.ListarProduto();
-<<<<<<< HEAD
+
             ger.Finalizar();
             int acao = 0;
-            Console.WriteLine("--------------------------------------------------" +
-                              "Deseja finalizar o seu pedido???");
-            Console.WriteLine($"1 - Finalizar Pedido" +
-                              $"2 - Cancelar seu Pedido");
-            Console.WriteLine("--------------------------------------------------");
-            if(acao == 1)
+            while(acao == 1 || acao == 2)
             {
+                Console.WriteLine("----------------------Atenção----------------------" +
+                              "\nO seu pedido sera calculado: o Valor do Produto, o valor do" +
+                             "\nfrete mais o valor de cupom de Desconto, MAS ANTES ESCOLHA UMA AÇÃO PARA " +
+                             "\nQUE POSSAMOS FINALIZAR O SEU PEDIDO!!!!!");
+                Console.WriteLine("\n--------------------------------------------------" +
+                              "\nDeseja finalizar o seu pedido???");
+               Console.WriteLine($"\n1 - Finalizar Pedido" +
+                              $"\n2 - Cancelar seu Pedido");
+               Console.WriteLine("\n--------------------------------------------------");
+              if(acao == 1)
+              {
                 double preco = 265.900;
                 double frete = 60.00;
                 double cupom = 30.00;
                 DateTime hoje = DateTime.Now;
-                DateTime dataDevolucao = hoje.AddDays(7);
-                dataDevolucao = dataDevolucao.AddHours(2);
-                Console.WriteLine($"Seu pedido foi finalizado as {hoje} com sucesso!!!" +
-                                  $"No valor de {preco+ frete- cupom}");
-            }
-            else  
-            {
+                
+                Console.WriteLine($"\n--------------------------------------------------------" +
+                                  $"\nSeu pedido foi finalizado no dia {hoje.Day} com sucesso!!!" +
+                                  $"\nNo valor de {preco+ frete- cupom}" +
+                                  $"\n+--------------------------------------------------------");
+              }
+              else  
+              {
                 Console.WriteLine("SEU PEDIDO FOI CANCELADO, VOLTE AO INICIO PARA FAZER OUTRA COMPRA!!!!");
+              }
+
             }
-            
-
-           
-
-=======
->>>>>>> c549c5e406049b80b871bdca391864ee8ae0290b
 
 
         }
