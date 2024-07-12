@@ -76,7 +76,6 @@ namespace Loja
             else if (acao == 7)
             {
                 CadastrarCupom();
-            }
             else if (acao == 8)
             {
                 CalcularFret();
@@ -310,200 +309,6 @@ namespace Loja
         }
 
 
-<<<<<<< HEAD
-
-        //8
-        private void CalcularFret()
-        {
-            int acao = -1;
-            while (acao < 1 || acao > 26)
-            {//começo do while
-                Console.WriteLine("---------------------------Calcular Valor do Fretev---------------------------");
-                Console.WriteLine($"1 - Acre " +
-                                  $"\n2 - Alagoas " +
-                                  $"\n3 - Amapá " +
-                                  $"\n4 - Amazonas " +
-                                  $"\n5 - Bahia " +
-                                  $"\n6 - Ceará " +
-                                  $"\n7 - Espírito Santo " +
-                                  $"\n8 - Goiás  " +
-                                  $"\n9 - Maranhão  " +
-                                  $"\n10 - Mato Grosso  " +
-                                  $"\n11 - Mato Grosso do Sul  " +
-                                  $"\n12 - Minas Gerais  " +
-                                  $"\n13 - Pará " +
-                                  $"\n14 - Paraíba  " +
-                                  $"\n15 - Paraná " +
-                                  $"\n16 - Pernanbuco  " +
-                                  $"\n17 - Piauí  " +
-                                  $"\n18 - Rio de Janeiro " +
-                                  $"\n19 - Rio Grande do Norte " +
-                                  $"\n20 - Rio Grande so Sul  " +
-                                  $"\n21 - Rondônia " +
-                                  $"\n22 - Roraima  " +
-                                  $"\n23 - Santa Catarina " +
-                                  $"\n24 - São Paulo  " +
-                                  $"\n25 - Sergipe  " +
-                                  $"\n26 - Tocantins ");
-                Console.WriteLine($"Digite o numero que coresponde a seu Estado");
-                acao = int.Parse(Console.ReadLine());
-
-                if (acao == 1)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$60,00 reais");
-                }
-                else if (acao == 2)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$40,00 reais");
-                }
-                else if (acao == 3)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$60,00 reais");
-                }
-                else if (acao == 4)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$60,00 reais");
-                }
-                else if (acao == 5)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$15,00 reais");
-                }
-                else if (acao == 6)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$50,00 reais");
-                }
-                else if (acao == 7)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$15,00 reais");
-                }
-                else if (acao == 8)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$15,00 reais");
-                }
-                else if (acao == 9)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$50,00 reais");
-                }
-                else if (acao == 10)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$40,00 reais");
-                }
-                else if (acao == 11)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$20,00 reais");
-                }
-                else if (acao == 12)
-                {
-                    //Qualquer pedido em Minas e com Frete Grátiz pois e a sede da empresa
-                    Console.WriteLine("Frete Grátiz");
-                }
-                else if (acao == 13)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$50,00 reais");
-                }
-                else if (acao == 14)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$50,00 reais");
-                }
-                else if (acao == 15)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$20,00 rais");
-                }
-                else if (acao == 16)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$50,00 reais");
-                }
-                else if (acao == 17)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$30,00 reais");
-                }
-                else if (acao == 18)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$15,00 reais");
-                }
-                else if (acao == 19)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$40,00 reias");
-                }
-                else if (acao == 20)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$20,00 reais");
-                }
-                else if (acao == 21)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$50,00 reais");
-                }
-                else if (acao == 22)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$60,00 reais");
-                }
-                else if (acao == 23)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$20,00 reais");
-                }
-                else if (acao == 24)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$15,00 reais");
-                }
-                else if (acao == 25)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$30,00 reais");
-                }
-                else if (acao == 26)
-                {
-                    Console.WriteLine("O valor do seu fret é: R$30,00 reais");
-                }
-                else
-                {
-                    Console.WriteLine("Acão invalida !!!!!!!!!");
-                    Console.WriteLine($"Erro !!!!!!!!! Erro !!!!!!!!!!!" +
-                                      $"\nDigite uma opição valida");
-                }
-                Console.WriteLine("------------------------------------------------------------------------------");
-            }//Final while
-        }
-
-       
-        //9  
-        private void FinalizarPedido()
-        {
-            ger.Finalizar();
-
-            Console.WriteLine("\n----------------------Atenção----------------------" +
-                              "\nO seu pedido sera calculado: o Valor do Produto, do" +
-                              "\nfrete mais o valor de cupom de Desconto, MAS ANTES " +
-                              "\nESCOLHA SE DESEJA OU NÃO FINALIZAR O SEU PEDIDO!!!!!");
-            
-
-
-            int acao = 0;
-            while( acao > 1 || acao < 2 )
-            {
-                
-                Console.WriteLine("\n--------------------------------------------------");
-                Console.WriteLine($"\n1 - Finalizar Pedido" +
-                                  $"\n2 - Cancelar seu Pedido");
-                Console.WriteLine("\n--------------------------------------------------");
-                acao = int.Parse(Console.ReadLine());
-                if (acao == 1)
-                {
-                ger.Finalizar();
-                double preco = 265.900;
-                double frete = 60.00;
-                double cupom = 30.00;
-                DateTime hoje = new DateTime(2024, 10, 07, 8, 30, 25);
-
-                    Console.WriteLine($"\n--------------------------------------------------------" +
-                                  $"\nSeu pedido foi finalizado no dia {hoje} !!!!!" +
-                                  $"\nNo valor de {preco+ frete- cupom}" +
-                                  $"\nVOLTE MAIS VEZES!!!!!!" +
-                                  $"\n+--------------------------------------------------------");
-                }
-                else  
-                {
-                   Console.WriteLine("SEU PEDIDO FOI CANCELADO, VOLTE AO INICIO PARA FAZER OUTRA COMPRA!!!!");
-                }
-=======
             //8
             private void CalcularFret()
             {
@@ -693,10 +498,8 @@ namespace Loja
 
                 }
 
->>>>>>> 6f540f9deb0f2705def2f05218eefb86572142cb
 
             }
-            return;
 
 
     }
