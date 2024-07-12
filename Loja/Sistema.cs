@@ -23,7 +23,7 @@ namespace Loja
         {
             //Repetição do Menu
             int acaoSolicitada = -1;
-            while (acaoSolicitada != 0)
+            while (acaoSolicitada < 0 || acaoSolicitada >9)
             {
                 Menu();
                 int acaoSelecionada = SolicitarAcaoUsuario();
@@ -294,7 +294,7 @@ namespace Loja
             }
         }
 
-       
+
 
         //8
         private void CalcularFret()
@@ -445,16 +445,7 @@ namespace Loja
                 }
                 Console.WriteLine("------------------------------------------------------------------------------");
             }//Final while
-
-
-
-
         }
-        
-
-
-
-        
 
        
         //9  
