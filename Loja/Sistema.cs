@@ -44,6 +44,7 @@ namespace Loja
                               "\n7 - Cadastrar cupom" +
                               "\n8 - Calcular frete" +
                               "\n9 - Finalizar Pedido" +
+                              "\n0 - Sair" +
                               "\n------------------------------------------------");
 
         }
@@ -309,9 +310,6 @@ namespace Loja
 
         }
 
-
-
-
         //8
         private void CalcularFret()
         {
@@ -463,7 +461,6 @@ namespace Loja
             }//Final while
         }
 
-
         //9  
         private void FinalizarPedido()
         {
@@ -476,8 +473,8 @@ namespace Loja
 
 
 
-            int acao = 0;
-            while (acao > 1 || acao < 2)
+            int acao = -1;
+            while (acao < 1 || acao > 2)
             {
 
                 Console.WriteLine("\n--------------------------------------------------");
@@ -495,9 +492,9 @@ namespace Loja
 
                     Console.WriteLine($"\n--------------------------------------------------------" +
                                   $"\nSeu pedido foi finalizado no dia {hoje} !!!!!" +
-                                  $"\nNo valor de {preco + frete - cupom}" +
-                                  $"\nVOLTE MAIS VEZES!!!!!!" +
-                                  $"\n+--------------------------------------------------------");
+                                  $"\nAo todo ficou no valor de {preco + frete - cupom}" +
+                                  $"\n-------------------VOLTE MAIS VEZES!!!!!! ------------------");
+                                 
                 }
                 else
                 {
