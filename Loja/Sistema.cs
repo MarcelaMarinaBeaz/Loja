@@ -89,7 +89,7 @@ namespace Loja
 
 
         //Validar de ação do usuario 
-        private int SolicitarAcaoUsuario()
+        private  int SolicitarAcaoUsuario()
         {
             int acao = -1;
             while (acao <= 0 || acao > 9)
@@ -502,7 +502,6 @@ namespace Loja
                 {
                    Console.WriteLine("SEU PEDIDO FOI CANCELADO, VOLTE AO INICIO PARA FAZER OUTRA COMPRA!!!!");
                 }
-=======
             //8
             private void CalcularFret()
             {
@@ -692,7 +691,6 @@ namespace Loja
 
                     }
 
->>>>>>> 6f540f9deb0f2705def2f05218eefb86572142cb
 
             }
             return;
