@@ -159,6 +159,7 @@ namespace Loja
 
                         ger.EditarCliente(acaoE, IDescolido);
 
+                        return;
                     }
                 }
                 //Listar Cliente
@@ -236,24 +237,33 @@ namespace Loja
         public void EditarItem()
         {
 
-            int acao = 0;
-            Console.WriteLine("Qual campo voce deseja editar??" +
-                              "\n1 - ID" +
-                              "\n2 - Nome");
-            if (acao == 1)
+            int acao = -1;
+            while (acao < 1 || acao >3)
             {
-                Console.WriteLine("Digite um novo ID??");
-            }
-            else if (acao == 2)
-            {
-                Console.WriteLine("Digite um Novo Nome??");
-            }
-            else
-            {
-                Console.WriteLine("\nERRO!!!!!" +
-                                  "\nDigite um Campo valido!!!!");
+                Console.WriteLine("Qual campo voce deseja editar??" +
+                                  "\n1 - Nome" +
+                                  "\n2 - Preço" +
+                                  "\n3 - Quantidade de Estoque");
+                if (acao == 1)
+                {
+                    Console.WriteLine("Digite um novo Nome??");
+                }
+                else if (acao == 2)
+                {
+                    Console.WriteLine("Digite um Novo Preço??");
+                }
+                else if (acao == 3)
+                {
+                    Console.WriteLine("Qual a nova Quantidade de Estoque ??");
+                }
+                else
+                {
+                    Console.WriteLine("\nERRO!!!!!" +
+                                      "\nDigite um Campo valido!!!!");
+                }
             }
             return;
+
         }
 
         //6
