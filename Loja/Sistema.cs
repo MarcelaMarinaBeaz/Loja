@@ -23,7 +23,7 @@ namespace Loja
         {
             //Repetição do Menu
             int acaoSolicitada = -1;
-            while (acaoSolicitada != 0)
+            while (acaoSolicitada < 0 || acaoSolicitada >9)
             {
                 Menu();
                 int acaoSelecionada = SolicitarAcaoUsuario();
