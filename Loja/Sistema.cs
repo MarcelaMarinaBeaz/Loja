@@ -460,9 +460,9 @@ namespace Loja
         //9  
         private void FinalizarPedido()
         {
-            ger.ListarProduto();
 
             ger.Finalizar();
+           
             int acao = 0;
             while(acao == 1 || acao == 2)
             {
