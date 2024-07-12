@@ -692,8 +692,15 @@ namespace Loja
                     }
 
 
+<<<<<<< HEAD
+
+                }
+                return;
+                //A
+=======
             }
             return;
+>>>>>>> 8740ef3f28005df8705cc7568585969c84c65530
 
 
             }
