@@ -60,9 +60,9 @@ namespace Loja
             Usuarios.Add(new Usuario(3, "Paulo", "pauulo@gmail.com", "Rua ..... .. .... n°500"));
 
             //Cupom
-            cupom.Add(new Cupom(1, "Impala1967", 30));
-            cupom.Add(new Cupom(2, "CivicG10",30));
-            cupom.Add(new Cupom(3, "Rural1970", 30));
+            cupom.Add(new Cupom(1, "Impala", "1967", 30));
+            cupom.Add(new Cupom(2, "Civic", "G10",30));
+            cupom.Add(new Cupom(3, "Rural", "1970", 30));
 
         }
 
@@ -72,7 +72,6 @@ namespace Loja
             Console.WriteLine("-------------Cupons Valodos-------------");
             foreach(Cupom cupom in cupom)
             {
-                Console.WriteLine("---------------------------------------");
                 cupom.ExibirCupomDisponivel();
             }
 
