@@ -35,7 +35,8 @@ namespace Loja
             Console.WriteLine($"\nId: {id}" +
                               $"\nNome: {nome}" +
                               $"\nPreço: {preco}" +
-                              $"\nEstoque: {Quant_estoque}");
+                              $"\nEstoque: {Quant_estoque}" +
+                              $"\nCupom: {cupom}");
             Console.WriteLine("-----------------------------------------------------------");
         }
         public void MostrarItemNoCarrinho()
@@ -44,16 +45,18 @@ namespace Loja
             Console.WriteLine($"\nId: {id}" +
                               $"\nNome: {nome}" +
                               $"\nPreço: {preco}" +
-                              $"\nEstoque: {Quant_estoque}");
+                              $"\nEstoque: {Quant_estoque}" +
+                              $"\nCupom: {cupom}");
             Console.WriteLine("-----------------------------------------------------------");
         }
         public void Finalizando()
         {
-            Console.WriteLine("------------------- Produto Comprado ------------------");
+            Console.WriteLine("\n------------------- Produto Comprado ------------------");
             Console.WriteLine($"\nId do Produto: {id}" +
                               $"\nNome do Produto: {nome}" +
-                              $"\nPreço do Produto: {preco}");
-            Console.WriteLine("-----------------------------------------------------------");
+                              $"\nPreço do Produto: {preco}" +
+                              $"\nCupom do Produto: {cupom}");
+            Console.WriteLine("\n-----------------------------------------------------------");
         }
         
 

@@ -218,6 +218,7 @@ namespace Loja
                 produtos.Finalizando();
             }
             Console.WriteLine("----------------------------------------------");
+           
         }
     }
 

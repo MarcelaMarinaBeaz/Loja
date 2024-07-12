@@ -451,39 +451,45 @@ namespace Loja
         //9  
         private void FinalizarPedido()
         {
-
             ger.Finalizar();
-           
+
+            Console.WriteLine("\n----------------------Atenção----------------------" +
+                              "\nO seu pedido sera calculado: o Valor do Produto, do" +
+                              "\nfrete mais o valor de cupom de Desconto, MAS ANTES " +
+                              "\nESCOLHA SE DESEJA OU NÃO FINALIZAR O SEU PEDIDO!!!!!");
+            
+
+
             int acao = 0;
-            while(acao == 1 || acao == 2)
+            while( acao > 1 || acao < 2 )
             {
-                Console.WriteLine("----------------------Atenção----------------------" +
-                              "\nO seu pedido sera calculado: o Valor do Produto, o valor do" +
-                             "\nfrete mais o valor de cupom de Desconto, MAS ANTES ESCOLHA UMA AÇÃO PARA " +
-                             "\nQUE POSSAMOS FINALIZAR O SEU PEDIDO!!!!!");
-                Console.WriteLine("\n--------------------------------------------------" +
-                              "\nDeseja finalizar o seu pedido???");
-               Console.WriteLine($"\n1 - Finalizar Pedido" +
-                              $"\n2 - Cancelar seu Pedido");
-               Console.WriteLine("\n--------------------------------------------------");
-              if(acao == 1)
-              {
+                
+                Console.WriteLine("\n--------------------------------------------------");
+                Console.WriteLine($"\n1 - Finalizar Pedido" +
+                                  $"\n2 - Cancelar seu Pedido");
+                Console.WriteLine("\n--------------------------------------------------");
+                acao = int.Parse(Console.ReadLine());
+                if (acao == 1)
+                {
+                ger.Finalizar();
                 double preco = 265.900;
                 double frete = 60.00;
                 double cupom = 30.00;
-                DateTime hoje = DateTime.Now;
-                
-                Console.WriteLine($"\n--------------------------------------------------------" +
-                                  $"\nSeu pedido foi finalizado no dia {hoje.Day} com sucesso!!!" +
+                DateTime hoje = new DateTime(2024, 10, 07, 8, 30, 25);
+
+                    Console.WriteLine($"\n--------------------------------------------------------" +
+                                  $"\nSeu pedido foi finalizado no dia {hoje} !!!!!" +
                                   $"\nNo valor de {preco+ frete- cupom}" +
+                                  $"\nVOLTE MAIS VEZES!!!!!!" +
                                   $"\n+--------------------------------------------------------");
-              }
-              else  
-              {
-                Console.WriteLine("SEU PEDIDO FOI CANCELADO, VOLTE AO INICIO PARA FAZER OUTRA COMPRA!!!!");
-              }
+                }
+                else  
+                {
+                   Console.WriteLine("SEU PEDIDO FOI CANCELADO, VOLTE AO INICIO PARA FAZER OUTRA COMPRA!!!!");
+                }
 
             }
+            return;
 
 
         }
