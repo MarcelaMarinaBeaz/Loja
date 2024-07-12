@@ -74,7 +74,6 @@ namespace Loja
             {
                 cupom.ExibirCupomDisponivel();
             }
-
             Console.WriteLine("----------------------------------------");
         }
 

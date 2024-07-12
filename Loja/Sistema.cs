@@ -98,7 +98,7 @@ namespace Loja
                 Console.WriteLine($"Qual ação deseja fazer ?");
                 acao = int.Parse(Console.ReadLine());
 
-                if (acao > 11)
+                if (acao > 9)
                 {
                     Console.WriteLine($"Erro !!!!!!!!" +
                         $"\n Digite uma ação valido");
@@ -175,11 +175,13 @@ namespace Loja
             }
 
         }
+        
         //2
         public void ListarItem()
         {
             ger.ListarProduto();
         }
+       
         //3
         private void AdicionarItemNoCarrinho()
         {
@@ -222,6 +224,7 @@ namespace Loja
 
             ger.AdicionarItemNoCarrinho();
         }
+       
         //4
         private void MostrarItemNoCarrinho()
         {
@@ -273,8 +276,9 @@ namespace Loja
         private void CadastrarCupom()
         {
             int acaoS = -1;
-            while (acaoS > 1 || acaoS > 2)
+            while (acaoS < 1 || acaoS > 2)
             {
+                Console.WriteLine("------------------ Cupom------------------");
                 Console.WriteLine($"1 - Ver Cupons Disponiveis" +
                                   $"\n2 - Cadasrar Cupom" +
                                   $"\nQual ação deseja realizar ??");
@@ -305,6 +309,7 @@ namespace Loja
                     Console.WriteLine("Opição invalida !!!!!!!!!!!!!!" +
                                       "\nEscolha uma opição invalida");
                 }
+                Console.WriteLine("---------------------------------------------");
             }
 
         }
