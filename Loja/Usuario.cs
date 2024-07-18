@@ -48,8 +48,17 @@ namespace Loja
 
         public void AlterarNome(string Nome)
         {
-            Nome = nome;
+            nome = Nome;
         }
 
+        public void Alteraremail(string Email)
+        {
+            email= Email;
+        }
+
+        public void AlterarEmdereco(string Endereco)
+        {
+            endereco = Endereco;    
+        }
     }
 }

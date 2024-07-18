@@ -195,15 +195,15 @@ namespace Loja
             {
                 //email
                 Console.WriteLine("Novo email do usuario");
-                string Email = Console.ReadLine();
+               u.Alteraremail(Console.ReadLine());
             }
             else if (acaoEscolida == 3)
             {
                 //endereço
                 Console.WriteLine("Novo endereço do usuario");
-                string Endereco = Console.ReadLine();
+                u.Alteraremail(Console.ReadLine());
             }
-
+            
 
         }//final editar
 

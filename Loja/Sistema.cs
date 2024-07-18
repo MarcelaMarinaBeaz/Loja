@@ -166,6 +166,7 @@ namespace Loja
 
                         ger.EditarCliente(acaoE, IDescolido);
 
+                        Console.WriteLine("Area editada com sucesso");
                         return;
                     }
                 }
