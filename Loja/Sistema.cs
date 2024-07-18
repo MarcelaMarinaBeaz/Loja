@@ -34,6 +34,7 @@ namespace Loja
         }
         public void Menu()
         {
+          
             Console.WriteLine("-------------------Lojas E&M-----------------");
             Console.WriteLine("\n1 - Cadastro do Usuário" +
                               "\n2 - Listar Item" +
@@ -47,9 +48,11 @@ namespace Loja
                               "\n0 - Sair" +
                               "\n------------------------------------------------");
 
+
         }
         public void RealizarAcao(int acao)
         {
+            bool sair = false;
             if (acao == 1)
             {
                 CadastroUsuario();
@@ -85,6 +88,10 @@ namespace Loja
             else if (acao == 9)
             {
                 FinalizarPedido();
+            }
+            else if(acao == 0)
+            {
+                sair = true;
             }
 
         }
