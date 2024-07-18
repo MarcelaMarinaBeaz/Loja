@@ -26,6 +26,18 @@ namespace Loja
         {
             return id;
         }
+        public void AlterarNome(string Nome)
+        {
+            nome = Nome;
+        }
+        public void AlterarPreco(double Preco)
+        {
+            preco = Preco;
+        }
+        public void AlterarQuantEstoque(int QD)
+        {
+            Quant_estoque = QD;
+        }
 
 
 
