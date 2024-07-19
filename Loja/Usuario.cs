@@ -56,7 +56,7 @@ namespace Loja
             email= Email;
         }
 
-        public void AlterarEmdereco(string Endereco)
+        public void AlterarEndereco(string Endereco)
         {
             endereco = Endereco;    
         }

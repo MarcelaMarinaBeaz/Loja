@@ -201,7 +201,7 @@ namespace Loja
             {
                 //endereço
                 Console.WriteLine("Novo endereço do usuario");
-                u.Alteraremail(Console.ReadLine());
+                u.AlterarEndereco(Console.ReadLine());
             }
             
 
