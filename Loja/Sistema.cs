@@ -315,7 +315,7 @@ namespace Loja
 
                     Cupom c = new Cupom(id, nomeCupom, cod, valorCupom);
 
-                    ger.AdicionarUsuario(c);
+                    ger.AdicionarCupom(c);
                 }
                 else
                 {

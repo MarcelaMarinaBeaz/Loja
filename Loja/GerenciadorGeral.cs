@@ -99,7 +99,7 @@ namespace Loja
         }
 
         //Adicionar e alterar o id automaticamente do Cupom de desconto
-        public void AdicionarUsuario(Cupom cupom)
+        public void AdicionarCupom(Cupom cupom)
         {
             int novoId = Usuarios.Max(selector: cupom => cupom.PegarId() + 1);
             cupom.AlterarId(novoId);
