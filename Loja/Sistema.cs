@@ -244,34 +244,27 @@ namespace Loja
 
         //5
         public void EditarItem()
-        {
-
-            int acao = -1;
-            while (acao < 1 || acao >3)
+        {                      
+             
+                int acao = -1;
+            while (acao > 3 || acao < 0)
             {
-                Console.WriteLine("Qual campo voce deseja editar??" +
-                                  "\n1 - Nome" +
+                ger.ListarCliente();
+                Console.WriteLine("Qual o id do usuario que deseja editar ?");
+                int IdEscolido = int.Parse(Console.ReadLine());
+                Console.WriteLine("------------------------------------------------");
+                Console.WriteLine("1 - Nome" +
                                   "\n2 - Preço" +
                                   "\n3 - Quantidade de Estoque");
-                if (acao == 1)
-                {
-                    Console.WriteLine("Digite um novo Nome??");
-                }
-                else if (acao == 2)
-                {
-                    Console.WriteLine("Digite um Novo Preço??");
-                }
-                else if (acao == 3)
-                {
-                    Console.WriteLine("Qual a nova Quantidade de Estoque ??");
-                }
-                else
-                {
-                    Console.WriteLine("\nERRO!!!!!" +
-                                      "\nDigite um Campo valido!!!!");
-                }
+                Console.WriteLine("Qual area Deseja editar???");
+                acao = int.Parse(Console.ReadLine());
+
+                ger.EditarItem(acao, IdEscolido);
+
+                Console.WriteLine("Area editada com sucesso");
+                return;
             }
-            return;
+
 
         }
 

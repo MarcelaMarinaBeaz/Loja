@@ -55,9 +55,9 @@ namespace Loja
             produtos.Add(new Produto(31, "Impala", 180000, 76));
 
             //Usuarios
-            Usuarios.Add(new Usuario(1, "Julia", "julia@gmail.com", "Rua ..... .. .... n°50"));
+            Usuarios.Add(new Usuario(1, "Eduarda", "eduarda@gmail.com", "Rua ..... .. .... n°50"));
             Usuarios.Add(new Usuario(2, "Marcela", "marcela@gmail.com", "Rua ..... .. .... n°105"));
-            Usuarios.Add(new Usuario(3, "Paulo", "pauulo@gmail.com", "Rua ..... .. .... n°500"));
+            Usuarios.Add(new Usuario(3, "teste", "teste@gmail.com", "Rua ..... .. .... n°500"));
 
             //Cupom
             cupom.Add(new Cupom(1, "Impala", "1967", 30));
@@ -216,6 +216,30 @@ namespace Loja
             }
             Console.WriteLine("----------------------------------------------");
            
+        }
+
+        //Editar Um Item
+        internal void EditarItem(int acao, int idEscolido)
+        {
+            Produto p = BuscarProdutoPorId(idEscolido);
+            if (acao == 1)
+            {
+                //usuario
+                Console.WriteLine("Novo nome de usuario");
+                p.AlterarNome(Console.ReadLine());
+            }
+            else if (acao == 2)
+            {
+                //Proço
+                Console.WriteLine("Novo email do usuario");
+               p.AlterarPreco(double.Parse(Console.ReadLine()));
+            }
+            else if (acao == 3)
+            {
+                //Quantidade de Estoque
+                Console.WriteLine("Novo endereço do usuario");
+               p.AlterarQuantEstoque(int.Parse(Console.ReadLine()));
+            }
         }
     }
 
