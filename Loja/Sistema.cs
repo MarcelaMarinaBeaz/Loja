@@ -53,6 +53,7 @@ namespace Loja
         public void RealizarAcao(int acao)
         {
             bool sair = false;
+
             if (acao == 1)
             {
                 CadastroUsuario();
