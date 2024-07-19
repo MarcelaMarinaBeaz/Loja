@@ -36,7 +36,8 @@ namespace Loja
         {
           
             Console.WriteLine("-------------------Lojas E&M-----------------");
-            Console.WriteLine("\n1 - Cadastro do Usuário" +
+            Console.WriteLine("\n0 - Sair" +
+                              "\n1 - Cadastro do Usuário" +
                               "\n2 - Listar Item" +
                               "\n3 - Adicionar Item no Carrinho" +
                               "\n4 - Mostrar Item do Carrinho" +
@@ -44,8 +45,7 @@ namespace Loja
                               "\n6 - Excluir" +
                               "\n7 - Cadastrar cupom" +
                               "\n8 - Calcular frete" +
-                              "\n9 - Finalizar Pedido" +
-                              "\n0 - Sair" +
+                              "\n9 - Finalizar Pedido" +                           
                               "\n------------------------------------------------");
 
 
@@ -488,8 +488,6 @@ namespace Loja
                               "\nfrete mais o valor de cupom de Desconto, MAS ANTES " +
                               "\nESCOLHA SE DESEJA OU NÃO FINALIZAR O SEU PEDIDO!!!!!");
 
-
-
             int acao = -1;
             while (acao < 1 || acao > 2)
             {
@@ -521,6 +519,7 @@ namespace Loja
                
             }
         }
+
     }
 }
 

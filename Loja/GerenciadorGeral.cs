@@ -112,14 +112,15 @@ namespace Loja
         {
 
             int acaoS = -1;
-            while (acaoS < 32 || acaoS >= 1)
+            while (acaoS < 32 && acaoS > 1  )
             {
                 Console.WriteLine("Seu item foi adicionado no carrinho!!!!");
-                acaoS = int.Parse(Console.ReadLine());
+                
 
-                if (acaoS > 32 || acaoS < 1)
+                if (acaoS > 1 && acaoS < 32)
                 {
-                    Console.WriteLine("Açao invalida!!!!");
+                    Console.WriteLine("Açao invalida!!!! \n Digite uma ação valida");
+                    acaoS = int.Parse(Console.ReadLine());
                 }
             }
             return;
@@ -211,7 +212,8 @@ namespace Loja
         {
             Console.WriteLine("------------- Lista dos produtos -------------");
             foreach (Produto produtos in produtos)
-            {
+            {             
+              int acao = int.Parse(Console.ReadLine());
                 produtos.Finalizando();
             }
             Console.WriteLine("----------------------------------------------");
